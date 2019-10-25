@@ -1,3 +1,0 @@
-export DB_NAME=fbarrientos
-export DB_USER=fbarrientos
-export DB_PASSWORD=196871519
