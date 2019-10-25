@@ -15,6 +15,7 @@ router.get('posts.new', '/new', async (ctx) => {
   await ctx.render('posts/new', {
     submitPostPath: ctx.router.url('posts.create'),
     ministries,
+    PostIndexPath: ctx.router.url('posts.list'),
   });
 });
 
@@ -60,6 +61,9 @@ router.post('posts.create', '/', async (ctx) => {
   if (ctx.request.body.min19) { associate(post, ctx.request.body.min19, ctx); }
   if (ctx.request.body.min20) { associate(post, ctx.request.body.min20, ctx); }
   if (ctx.request.body.min21) { associate(post, ctx.request.body.min21, ctx); }
+  if (ctx.request.body.min22) { associate(post, ctx.request.body.min22, ctx); }
+  if (ctx.request.body.min23) { associate(post, ctx.request.body.min23, ctx); }
+  if (ctx.request.body.min24) { associate(post, ctx.request.body.min24, ctx); }
 
 
   ctx.redirect(ctx.router.url('posts.list'));
