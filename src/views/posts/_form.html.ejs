@@ -8,44 +8,6 @@
       </ul>
     </div>
   <% } %>
-    <!--<form action="<%= submitPostPath %>" method="post">
-    <div class="form-field">
-      <label for="privacy">¿Qué carácter quieres que tenga tu propuesta?</label>
-      <select name = "privacy">
-        <option value="anonymous" selected>Anónima</option>
-        <option value="public">Pública</option>
-      </select>
-    </div>
-    <div class="form-field">
-        <label for="email">Correo</label>
-        <input type="text" name="email"/>
-    </div>
-    <div class="form-field">
-        <label for="ig_account">Cuenta de instagram:</label>
-        <input type="text" name="instagram"/>
-    </div>
-    <div class="form-field">
-      <label for="area">¿A qué área(s) está asociada tu propuesta?</label>
-      <% ministries.forEach((min) => { %>
-        <input type="checkbox" name= <%= "min"+ min.id %> value=<%= min.id %> > <%= min.ministry %>
-        <% }); %>
-    </div>
-    <div class="form-field">
-        <label for="type">¿Cómo clasificarías tu propuesta?</label>
-        <select name = "type">
-            <option value="law" selected>Reforma/cambio a un Proyecto de Ley</option>
-            <option value="citizen-project">Proyecto ciudadano</option>
-            <option value="company-project">Proyecto dirigido a empresas</option>
-        </select>
-    </div>
-    <div class="form-field">
-        <label for="body">Describe tu propuesta:</label>
-        <textarea type="text" name="body"></textarea>
-    </div>
-    <div class="field">
-        <input type="submit" name="create" value="Create" />
-    </div>
-  </form> -->
 
   <div id="ministries"></div>
   <script type="text/javascript">
@@ -58,7 +20,7 @@
 </div>
 
   <p>
-    <div id="react-app"></div>
+    <div id="react-form"></div>
   </p>
   <a href="<%- PostIndexPath %>">Ir a ver propuestas</a>
    
