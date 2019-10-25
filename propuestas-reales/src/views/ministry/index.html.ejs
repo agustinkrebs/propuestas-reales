@@ -1,0 +1,26 @@
+<h1>Categorias/Ministerios</h1>
+<% if (!ministriesList.length) { %>
+  <p>No hay Categorias</p>
+<% } else { %>
+  <table class="generic-list">
+    <thead>
+        <tr>
+          <th> Categoria </th>
+        </tr>
+    </thead>
+    <tbody>
+      <% ministriesList.forEach((ministry) => { %>
+        <tr>
+          <td><%- ministry.ministry %></td>
+          <td>
+              <form action="<%- deleteMinistryPath(ministry) %>" method="POST">
+                <input type="hidden" name="_method" value="delete" />
+                <input type="submit" value="Delete" />
+              </form>
+            </td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+<% } %>
+<a href="<%- newMinistryPath %>">Nueva categoria/ministerio</a>

@@ -1,0 +1,30 @@
+<div>
+    <% if (locals.errors) { %>
+      <div class="errors">
+        You need to fix the following errors:
+        <ul>
+          <% errors.forEach(error => { %>
+            <li><%= error.comment %></li>
+          <% }); %>
+        </ul>
+      </div>
+    <% } %>
+
+    <form action="<%= submitMinistryPath %>" method="post">
+      <% if (!ministry.isNewRecord) { %>
+        <input type="hidden" name="_method" value="patch" />
+      <% } %>
+      <div class="field">
+        <label for="category">Categoria/Ministerio</label>
+        <textarea type="text" name="ministry"><%= ministry.ministry %></textarea>
+      </div>
+      <div class="field">
+        <% if (ministry.isNewRecord) { %>
+          <input type="submit" name="create" value="Create" />
+        <% } else { %>
+          <input type="submit" name="update" value="Update" />
+        <% } %>
+      </div>
+    </form>
+  </div>
+  
