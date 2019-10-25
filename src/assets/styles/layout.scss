@@ -1,4 +1,89 @@
 html, body {
+  font-family: 'Fira Sans', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+.navbar {
+  background-color:rgb(30, 30, 30);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+  height: 50px;
+
+  .navbar-logo {
+    height: 100%;
+    width: auto;
+    
+    img {
+      max-height: 100%;
+      width: auto;
+    }
+  }
+}
+
+.content-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-container{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: 61%;
+  padding: 20px 20px 0px 20px;
+  margin: 18px 0;
+  border-radius: 10px;
+
+  .id{
+    margin: 0 10 0 0px;
+    align-self: center;
+
+  }
+
+  .areas-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .area-header{
+      margin: 8px 8px 8px 12px;
+    }
+
+    .area{
+      background-color: #1ab188;
+      margin: 0 5px;
+      padding: 2px 4px;
+      border-radius: 5px;
+    }
+
+
+  }
+  .body-container{
+    display: flex;
+    flex-direction: column;
+
+    .propuesta-header{
+      margin: 8px 8px 0 12px;
+    }
+
+    .body{
+      font-style: italic;
+      hyphens: auto;
+      text-align: justify;
+      margin: 0 5px;
+      padding: 10px 25px;
+      border-radius: 5px;
+    }
+
+
+  }
+
 }

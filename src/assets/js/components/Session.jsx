@@ -27,9 +27,6 @@ export default class Session extends Component {
   }
 
   async onSubmit(event) {
-    // const info = JSON.stringify({name: this.state.name, mail: this.state.mail, password: this.state.password,
-    // rol: this.state.rol})
-    console.log('VOY A MANDAR FORM');
     const data = new FormData();
     data.append('', this.state.photo);
     data.append('privacy', this.state.privacy);
@@ -66,9 +63,7 @@ export default class Session extends Component {
       method: 'POST',
       body: data,
     });
-    console.log('enviando');
     this.setState({ bye: true });
-    // this.props.history.push('/posts');
     event.preventDefault();
   }
 
@@ -169,12 +164,6 @@ export default class Session extends Component {
             </p>
           </div>
 
-          <p className="blanco_mediano">
-              Foto
-          </p>
-
-          <input id="file_" placeholder="seleccionar foto" type="file" id="photo" name="photo" />
-
           <div>
             <button type="submit" className="button button-block">
             Publicar
@@ -270,15 +259,9 @@ export default class Session extends Component {
             </p>
           </div>
 
-          <p className="blanco_mediano">
-        Foto
-          </p>
-
-          <input id="file_" placeholder="seleccionar foto" type="file" id="photo" name="photo" />
-
           <div>
             <button type="submit" className="button button-block">
-      Publicar
+              Publicar
             </button>
           </div>
 
