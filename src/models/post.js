@@ -4,7 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     email: DataTypes.STRING,
     instagram: DataTypes.STRING,
     type: DataTypes.STRING,
-    body: DataTypes.STRING,
+    body: DataTypes.TEXT,
   }, {});
 
   post.associate = function associate(models) {

@@ -3,8 +3,9 @@ import IndexService from '../services/Index';
 import PostListComponent from '../components/Index';
 
 function postObject(posts) {
+const rPosts = posts.reverse();
   const objectList = [];
-  posts.forEach((p) => {
+  rPosts.forEach((p) => {
     const postTuples = p.split(',&,'); // p.id, '&', p.privacy, '&', p.email, '&', p.instagram,  '&', p.type, '&', p.body
     const object = {
  id: postTuples[0], privacy: postTuples[1], email: postTuples[2], instagram: postTuples[3], type: postTuples[4], body: postTuples[5], 
