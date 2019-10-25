@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Session from './components/Session';
+import Form from './components/Form';
+import PostList from './containers/Index';
 
 
-const reactAppContainer = document.getElementById('react-app');
+const reactForm = document.getElementById('react-form');
+const reactIndex = document.getElementById('react-index');
 
 
-if (reactAppContainer) {
-  ReactDOM.render(<Session />, reactAppContainer);
+if (reactForm) {
+  ReactDOM.render(<Form />, reactForm);
 }
 
+if (reactIndex) {
+  ReactDOM.render(<PostList />, reactIndex);
+}
 
