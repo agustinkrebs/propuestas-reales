@@ -8,7 +8,19 @@ module.exports = {
     },
 
     privacy: {
-      type: Sequelize.INT,
+      type: Sequelize.BOOLEAN,
+    },
+    email: {
+      type: Sequelize.STRING,
+    },
+    instagram: {
+      type: Sequelize.STRING,
+    },
+    type: {
+      type: Sequelize.STRING,
+    },
+    body: {
+      type: Sequelize.STRING,
     },
 
     createdAt: {

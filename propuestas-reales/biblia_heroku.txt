@@ -1,0 +1,66 @@
+Guía para subir a heroku (leer hasta el final):
+
+1. Crear aplicación en heroku.com: ---------------------------------------------------
+
+1.1 Ir a https://dashboard.heroku.com/apps e iniciar sesión
+
+1.2 Crear aplicación (botón New >Create New App, arriba a la derecha, si tienen más de 5 apps ya creadas, tienen que borrar alguna)
+
+1.3 Le ponen un nombre y después Create app (dejen la región intacta)
+
+1.4 Los lleva a un como dashboard de la app, ahí apretan Settings, luego se van hacia abajo y apretan Add Buildpack
+
+1.5 Apretan el de node.js, luego save changes
+
+1.6 Aparecen en la página anterior y ahora van a Resources, después en Add-ons buscan Heroku Postgres, lo apretan, después en el pop-up apretan Provision
+
+1.7 Aparecen en la misma página, y se van a Settings de nuevo, y apretan Reveal Config Vars
+
+2. Subir la app a Heroku: ------------------------------------------------------------
+
+2.1 Bajarse el repositorio del proyecto
+
+2.2 Copiar la carpeta “clothex” en otro lugar
+
+2.3 Meterse a esa carpeta desde el terminal
+
+2.4 en el terminal:
+
+git init
+
+heroku login ##—> acá los va a llevar a un inicio de sesión en su navegador, ahí métanse con los datos de usuario de la persona que creó la página)
+
+heroku git:remote -a nombre-de-la-app-creada
+
+git add .
+
+git commit -m 'initial commit for heroku'
+
+git push heroku master
+
+POSIBLES ERRORES:
+A. Se cae por el archivo yarn vs nvm: “Two different lockfiles found: package-lock.json and yarn.lock”
+
+correr en terminal:
+git rm yarn.lock
+git commit -m 'Remove yarn lock file'
+git push heroku master
+
+
+B. Se cae por los node_modules: “node_modules checked into source control”
+
+correr en terminal:
+git rm -r --cached node_modules
+git commit -m 'Remove node_modules'
+git push heroku master
+
+
+3. Setear variable de entorno (API KEY): ---------------------------------------------------
+3.1 correr en terminal:
+heroku config:set MY_API_KEY=AIzaSyAqD1wTKjxxHz496wZKtBJGPn1s4uoytUw
+
+4. Correr seeds en heroku: ---------------------------------------------------
+4.1 correr en terminal:
+heroku run ./node_modules/.bin/sequelize db:seed:all
+
+5. Poner el link en el README.md
