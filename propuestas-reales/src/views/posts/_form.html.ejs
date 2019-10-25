@@ -1,0 +1,49 @@
+<% if (locals.errors) { %>
+    <div class="errors">
+      You need to fix the following errors:
+      <ul>
+        <% errors.forEach(error => { %>
+          <li><%= error.message %></li>
+        <% }); %>
+      </ul>
+    </div>
+  <% } %>
+  <form action="<%= submitPostPath %>" method="post">
+    <div class="form-field">
+      <label for="privacy">¿Qué carácter quieres que tenga tu propuesta?</label>
+      <select name = "privacy">
+        <option value="anonymous" selected>Anónima</option>
+        <option value="public">Pública</option>
+      </select>
+    </div>
+    <div class="form-field">
+        <label for="email">Correo</label>
+        <input type="text" name="email"/>
+    </div>
+    <div class="form-field">
+        <label for="ig_account">Cuenta de instagram:</label>
+        <input type="text" name="ig_account"/>
+    </div>
+    <div class="form-field">
+      <label for="area">¿A qué área(s) está asociada tu propuesta?</label>
+      <input type="checkbox" name="area" value="A1"> Economía, Fomento y Turismo
+      <input type="checkbox" name="area" value="A2"> Salud
+      <input type="checkbox" name="area" value="A3"> Mujer y la Equidad de Género 
+      <input type="checkbox" name="area" value="A-"> Otra
+    </div>
+    <div class="form-field">
+        <label for="privacy">¿Cómo clasificarías tu propuesta?</label>
+        <select name = "privacy">
+            <option value="law" selected>Reforma/cambio a un Proyecto de Ley</option>
+            <option value="citizen-project">Proyecto ciudadano</option>
+            <option value="company-project">Proyecto dirigido a empresas</option>
+        </select>
+    </div>
+    <div class="form-field">
+        <label for="body">Describe tu propuesta:</label>
+        <textarea type="text" name="body"></textarea>
+    </div>
+    <div class="field">
+        <input type="submit" name="create" value="Create" />
+    </div>
+  </form>

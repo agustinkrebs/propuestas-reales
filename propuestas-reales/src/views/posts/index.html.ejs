@@ -1,1 +1,7 @@
-<p>index</p>
+<% posts.forEach( post => {%>
+    <p><%post%></p>
+<%})%>
+
+<form class="new-post-button-container" action="<%- newPostPath %>">
+    <button class="new-post-button">¡Publicar nueva propuesta!</button>
+</form>
