@@ -6,53 +6,37 @@ export default class Session extends Component {
     this.state = {
       name: '',
       nameError: '',
-      password: '',
-      confirmPassword: '',
-      passwordError: '',
-      confirmPpasswordError: '',
       photo: '',
       description: '',
+      descriptionError: '',
       mail: '',
       mailError: '',
       totalError: false,
       bye: false,
-      rol: 1
+      privacy: '',
+      email: '',
+      instagram: '',
+      A1: "",
+      A2: "", 
+      A3: "", 
+      A4: "",
+      content: ""
 
     };
-    this.onVotesChanged = this.onVotesChanged.bind(this);
+    this.handleChange = this.handleChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
     this.fileEvent = this.fileEvent.bind(this);
   }
 
-  onVotesChanged(event) {
+  handleChange(event) {
     this.setState({ [event.target.name]: event.target.value });
+  
 
-  if (this.state.name.length < 5 ){
-    this.setState({ nameError: 'El nombre debe poseer minimo 6 caracteres' })
-  } else if (this.state.name.length > 4) {
-    this.setState({ nameError: '' })
-  }
-
+  
   if (this.state.mail.indexOf("@") == -1 && (this.state.mail)){
     this.setState({ mailError: 'El email no posee @' })
   } else if (this.state.mail){
     this.setState({ mailError: '' })
-  }
-
-  if (this.state.password.length < 5 ){
-    this.setState({ passwordError: 'La contraseña debe poseer minimo 6 caracteres' })
-  } else if (this.state.password.length > 4) {
-    this.setState({ passwordError: '' })
-  }
-
-  if ((this.state.confirmPassword == this.state.password)  == false){
-    console.log(this.state.password)
-    console.log(this.state.confirmPassword)
-    console.log('- - - - -')
-    this.setState({ confirmPasswordError: 'Las contraseñas no coinciden' })
-  } else  {
-    this.setState({ confirmPasswordError: '' })
-
   }
 
 };
@@ -89,123 +73,147 @@ fileEvent(event) {
 
 
   render() {
-    if (this.state.bye){
-      return (<div>
-          <h1>Te has registrado exitosamente</h1>
-      </div>)
-    } else if (this.state.totalError) {
+
+    if (!this.state.privacy){
       return (
-
-        <div className="new-user">
-        <p class="letra_chica_form"> Arregla los campos con error </p>
-          <form onSubmit={this.onSubmit} encType="multipart/form-data">
-
-             <div className="field-wrap">
-                  <input className="input_form" value={this.state.name} placeholder='Nombre*' type="text" onChange={this.onVotesChanged} id="name" name="name" />
-                    <p> {this.state.nameError} </p>
-              </div>
-
-              <div className="field-wrap">
-                  <label>
-                   <span className="req"></span>
-                  </label>
-                  <input  className="input_form" placeholder='email@example.org*' value={this.state.mail}  type="text" onChange={this.onVotesChanged} id="mail" name="mail" />
-                  <p> {this.state.mailError} </p>
-              </div>
-
-
-              <div className="field-wrap">
-                  <label>
-                   <span className="req"></span>
-                  </label>
-                  <input  className="input_form" placeholder='Contraseña*' type="password" onChange={this.onVotesChanged} id="password" name="password" />
-                  <p> {this.state.passwordError} </p>
-              </div>
-
-              {/*<div className="field-wrap">
-                  <label>
-                   <span className="req"></span>
-                  </label>
-                  <input  className="input_form" placeholder='confirmar contraseña*' type="password" onChange={this.onVotesChanged} id="confirmPassword" name="confirmPassword" />
-                  <p> {this.state.confirmPasswordError} </p>
-                </div> */}
-
-              <div className="field-wrap">
-                  <textarea  className="input_form" placeholder='Cuéntanos quien eres*' type="text_area" onChange={this.onVotesChanged} id="description" name="description" />
-              </div>
-
-              <p className="blanco_mediano">
-                Foto
-              </p>
-
-              <input id='file_' placeholder='seleccionar foto' type="file" id="photo" name="photo" />
-
-              <div>
-              <button type="submit" className="button button-block">
-              Get Started
-              </button>
-            </div>
-
-          </form>
-        </div>
-      );
-    } else {
-      return (
-        <div className="tab-content">
 
           <form onSubmit={this.onSubmit} encType="multipart/form-data">
 
-             <div className="field-wrap">
-                  <input className="input_form" placeholder='Nombre*' type="text" onChange={this.onVotesChanged} id="name" name="name" />
-                    <p> {this.state.nameError} </p>
-              </div>
-
-              <div className="field-wrap">
-                  <label>
-                   <span className="req"></span>
-                  </label>
-                  <input  className="input_form" placeholder='email@example.org*'
-                   type="text" onChange={this.onVotesChanged} id="mail" name="mail" />
-                  <p> {this.state.mailError} </p>
-              </div>
-
-
-              <div className="field-wrap">
-                  <label>
-                   <span className="req"></span>
-                  </label>
-                  <input  className="input_form" placeholder='Contraseña*' type="password" onChange={this.onVotesChanged} id="password" name="password" />
-                  <p> {this.state.passwordError} </p>
-              </div>
-
-               {/*
-               </form>div className="field-wrap">
-                  <label>
-                   <span className="req"></span>
-                  </label>
-                  <input  className="input_form" placeholder='confirmar contraseña*' type="password" onChange={this.onVotesChanged} id="confirmPassword" name="confirmPassword" />
-                  <p> {this.state.confirmPpasswordError} </p>
-               </div> */}
-
-              <div className="field-wrap">
-                  <input  className="input_form" placeholder='Cuéntanos quien eres*' type="text" onChange={this.onVotesChanged} id="description" name="description" />
-              </div>
-
-              <p className="blanco_mediano">
-                Ingresa tu mejor foto de perfil 
-              </p>
-              <input id='file_' placeholder='seleccionar foto' type="file" id="photo" name="photo" onBlur={this.fileEvent}  />
-
-              <div>
-              <button type="submit" className="button button-block">
-              Get Started
-              </button>
-            </div>
+            <label>
+            ¿Qué carácter quieres que tenga tu propuesta?
+              <p><select id="privacy" name="privacy" value={this.state.value} onChange={this.handleChange}>
+                <option value="-">- carácter -</option>
+                <option value="anonymous">Anónima</option>
+                <option value="private">Privada</option>
+              </select></p>
+            </label>
 
           </form>
-        </div>
       );
-    }
+    
   }
+  else if (this.state.privacy == 'anonymous'){
+    return (
 
+        <form onSubmit={this.onSubmit} encType="multipart/form-data">
+
+          <label>
+          ¿Qué carácter quieres que tenga tu propuesta?
+            <p><select id="privacy" name="privacy" value={this.state.value} onChange={this.handleChange}>
+              <option value="-">- carácter -</option>
+              <option value="anonymous">Anónima</option>
+              <option value="private">Privada</option>
+            </select></p>
+          </label>
+
+
+            <div className="field-wrap">
+              <label for="area">¿A qué área(s) está asociada tu propuesta?</label>
+              <p><input type="checkbox" id="A1" name="A1" value={this.state.value} onChange={this.handleChange} value="A1"/> Economía, Fomento y Turismo </p>
+              <p><input type="checkbox" id="A2" name="A2" value={this.state.value} onChange={this.handleChange} value="A2"/> Salud </p>
+              <p><input type="checkbox" id="A3" name="A3" value={this.state.value} onChange={this.handleChange} value="A3"/> Mujer y la Equidad de Género  </p>
+              <p><input type="checkbox" id="A4" name="A4" value={this.state.value} onChange={this.handleChange} value="A4"/> Otra </p>
+            </div>
+
+            <label>
+          ¿De qué forma quieres que impacte tu proyecto?
+            <p><select id="content" name="content" value={this.state.value} onChange={this.handleChange}>
+                <option value="law" selected>Reforma/cambio a un Proyecto de Ley</option>
+                <option value="citizen-project">Proyecto ciudadano</option>
+                <option value="company-project">Proyecto dirigido a empresas</option>
+            </select></p>
+          </label>
+
+          <div className="field-wrap">
+                <p><input className="input_form" value={this.state.description} placeholder='Decribenos tu proyecto' type="text" onChange={this.handleChange} id="description" name="description" /></p>
+                  <p> {this.state.descriptionError} </p>
+            </div>
+
+            <p className="blanco_mediano">
+              Foto
+            </p>
+
+            <input id='file_' placeholder='seleccionar foto' type="file" id="photo" name="photo" />
+
+            <div>
+            <button type="submit" className="button button-block">
+            Get Started
+            </button>
+          </div>
+
+        </form>
+    );
+  
+}
+else if (this.state.privacy == 'private'){
+  return (
+
+    <form onSubmit={this.onSubmit} encType="multipart/form-data">
+
+    <label>
+    ¿Qué carácter quieres que tenga tu propuesta?
+      <p><select id="privacy" name="privacy" value={this.state.value} onChange={this.handleChange}>
+        <option value="-">- carácter -</option>
+        <option value="anonymous">Anónima</option>
+        <option value="private">Privada</option>
+      </select></p>
+    </label>
+
+      <div className="field-wrap">
+          <input className="input_form" value={this.state.name} placeholder='¿Cómo te llamas?' type="text" onChange={this.handleChange} id="name" name="name" />
+            <p> {this.state.nameError} </p>
+      </div>
+
+     <div className="field-wrap">
+          <input className="input_form" value={this.state.instagram} placeholder='Cuenta de instagram*' type="text" onChange={this.handleChange} id="instagram" name="instagram" />
+            <p> {this.state.nameError} </p>
+      </div>
+
+      <div className="field-wrap">
+          <label>
+           <span className="req"></span>
+          </label>
+          <input  className="input_form" placeholder='email@example.org*' value={this.state.mail}  type="text" onChange={this.handleChange} id="mail" name="mail" />
+          <p> {this.state.mailError} </p>
+      </div>
+
+      <div className="field-wrap">
+        <label for="area">¿A qué área(s) está asociada tu propuesta?</label>
+        <p><input type="checkbox" id="A1" name="A1" value={this.state.value} onChange={this.handleChange} value="A1"/> Economía, Fomento y Turismo </p>
+        <p><input type="checkbox" id="A2" name="A2" value={this.state.value} onChange={this.handleChange} value="A2"/> Salud </p>
+        <p><input type="checkbox" id="A3" name="A3" value={this.state.value} onChange={this.handleChange} value="A3"/> Mujer y la Equidad de Género  </p>
+        <p><input type="checkbox" id="A4" name="A4" value={this.state.value} onChange={this.handleChange} value="A4"/> Otra </p>
+      </div>
+
+      <label>
+    ¿De qué forma quieres que impacte tu proyecto?
+      <p><select id="content" name="content" value={this.state.value} onChange={this.handleChange}>
+          <option value="law" selected>Reforma/cambio a un Proyecto de Ley</option>
+          <option value="citizen-project">Proyecto ciudadano</option>
+          <option value="company-project">Proyecto dirigido a empresas</option>
+      </select></p>
+    </label>
+
+    <div className="field-wrap">
+          <p><input className="input_form" value={this.state.description} placeholder='Decribenos tu proyecto' type="text" onChange={this.handleChange} id="description" name="description" /></p>
+            <p> {this.state.descriptionError} </p>
+      </div>
+
+      <p className="blanco_mediano">
+        Foto
+      </p>
+
+      <input id='file_' placeholder='seleccionar foto' type="file" id="photo" name="photo" />
+
+      <div>
+      <button type="submit" className="button button-block">
+      Get Started
+      </button>
+    </div>
+
+  </form>
+  );
+
+}
+}
  }
