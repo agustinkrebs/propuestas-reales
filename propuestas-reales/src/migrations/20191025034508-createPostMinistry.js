@@ -9,6 +9,20 @@ module.exports = {
 
     ministryId: {
       type: Sequelize.INTEGER,
+      references: {
+        model: 'ministries',
+        key: 'id',
+      },
+    },
+    postId: {
+      type: Sequelize.INTEGER,
+      references: {
+        model: 'posts',
+        key: 'id',
+      },
+    },
+    registeredAt: {
+      type: Sequelize.DATE,
     },
 
     createdAt: {

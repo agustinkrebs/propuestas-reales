@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
   const postMinistry = sequelize.define('postMinistry', {
-    ministryId: DataTypes.INTEGER,
+    registeredAt: DataTypes.DATE,
   }, {});
 
   postMinistry.associate = function associate() {
