@@ -47,9 +47,20 @@
     </div>
   </form> -->
 
+  <div id="ministries"></div>
+  <script type="text/javascript">
+    console.log("Cargando JS en HTML...");
+    var ministriesList=[<% ministries.map((m) => { %>
+                    <%- `'${[m.ministry, '&', m.id]}',` %>
+                <% })%>];
+    console.log('Ministerios desde backend: ')
+  </script>  
+</div>
+
   <p>
     <div id="react-app"></div>
   </p>
+  <a href="<%- PostIndexPath %>">Ir a ver propuestas</a>
    
     
     
