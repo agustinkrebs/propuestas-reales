@@ -7,8 +7,9 @@ module.exports = (sequelize, DataTypes) => {
     body: DataTypes.STRING,
   }, {});
 
-  post.associate = function associate() {
+  post.associate = function associate(models) {
     // associations can be defined here. This method receives a models parameter.
+    post.belongsToMany(models.ministry, { through: models.postMinistry, foreignKey: 'postId' });
   };
 
   return post;
