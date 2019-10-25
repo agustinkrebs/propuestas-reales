@@ -22,18 +22,17 @@
     </div>
     <div class="form-field">
         <label for="ig_account">Cuenta de instagram:</label>
-        <input type="text" name="ig_account"/>
+        <input type="text" name="instagram"/>
     </div>
     <div class="form-field">
       <label for="area">¿A qué área(s) está asociada tu propuesta?</label>
-      <input type="checkbox" name="area" value="A1"> Economía, Fomento y Turismo
-      <input type="checkbox" name="area" value="A2"> Salud
-      <input type="checkbox" name="area" value="A3"> Mujer y la Equidad de Género 
-      <input type="checkbox" name="area" value="A-"> Otra
+      <% ministries.forEach((min) => { %>
+        <input type="checkbox" name= <%= "min"+ min.id %> value=<%= min.id %> > <%= min.ministry %>
+        <% }); %>
     </div>
     <div class="form-field">
-        <label for="privacy">¿Cómo clasificarías tu propuesta?</label>
-        <select name = "privacy">
+        <label for="type">¿Cómo clasificarías tu propuesta?</label>
+        <select name = "type">
             <option value="law" selected>Reforma/cambio a un Proyecto de Ley</option>
             <option value="citizen-project">Proyecto ciudadano</option>
             <option value="company-project">Proyecto dirigido a empresas</option>
