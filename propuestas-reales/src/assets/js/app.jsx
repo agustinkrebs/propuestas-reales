@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
+import Session from './components/Session';
+
 
 const reactAppContainer = document.getElementById('react-app');
 
+
 if (reactAppContainer) {
-  ReactDOM.render(<App />, reactAppContainer);
+  ReactDOM.render(<Session />, reactAppContainer);
 }
+
+
