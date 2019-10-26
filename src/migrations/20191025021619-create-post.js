@@ -31,6 +31,16 @@ module.exports = {
       allowNull: false,
       type: Sequelize.DATE,
     },
+    
+    approved: {
+      allowNull: false,
+      type: Sequelize.BOOLEAN,
+    },
+
+    rating: {
+      allowNull: false,
+      type: Sequelize.INTEGER,
+    }
   }),
 
   down: (queryInterface) => queryInterface.dropTable('posts'),

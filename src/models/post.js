@@ -3,7 +3,7 @@ module.exports = (sequelize, DataTypes) => {
     privacy: DataTypes.BOOLEAN,
     email: DataTypes.STRING,
     instagram: DataTypes.STRING,
-    type: DataTypes.STRING,
+    type: DataTypes.STRING(1000),
     body: DataTypes.TEXT,
   }, {});
 
