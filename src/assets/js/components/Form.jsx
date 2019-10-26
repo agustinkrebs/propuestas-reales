@@ -222,8 +222,6 @@ export default class Form extends Component {
             <label htmlFor="area">¿A qué área(s) está asociada tu propuesta?</label>
             {this.state.ministries.map((min) => {
               const minTuple = min.split(',&,');
-              // console.log(minTuple);
-              // Return the element. Also pass key
               return (
                 <p>
               <input type="checkbox" name={`min${minTuple[1]}`} value={minTuple[1]} onChange={this.handleChange} />
