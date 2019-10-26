@@ -39,7 +39,6 @@ router.get('login.view', '/login-view', async (ctx) => {
   } else {
       console.log("fallo");
       await ctx.render('session/login', {
-        mail,
         checkSessionPath: ctx.router.url('session.check'),
         error: 'Incorrect mail or password',
       });
@@ -62,6 +61,7 @@ router.patch('post.rechazar', '/rechazo/:id', loadPost, async (ctx) => {
 });
 
 router.delete('session.destroy', '/', (ctx) => {
+  ctx.session.userId = 0;
   ctx.session = null;
   ctx.redirect(ctx.router.url('admin.login'));
 });

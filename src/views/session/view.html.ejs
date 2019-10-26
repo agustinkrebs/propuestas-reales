@@ -1,5 +1,8 @@
 <section>
-    <a  href="<%- salirPath %>">Cerrar Sesión</a>
+    <form action="<%- salirPath %>" method="POST">
+        <input type="hidden" name="_method" value="delete" />
+        <input type="submit" value="Cerrar sesion" />
+    </form>
     <h1>Publicaciones por aprobar:</h1>
     <div>
         <table>
