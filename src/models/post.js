@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     type: DataTypes.STRING(1000),
     body: DataTypes.TEXT,
     rating: DataTypes.FLOAT,
-    approval: DataTypes.BOOLEAN
+    approved: DataTypes.BOOLEAN
   }, {});
 
   post.associate = function associate(models) {
