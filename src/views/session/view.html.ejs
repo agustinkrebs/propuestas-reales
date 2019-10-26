@@ -1,0 +1,105 @@
+<section>
+    <a  href="<%- salirPath %>">Cerrar Sesión</a>
+    <h1>Publicaciones por aprobar:</h1>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Autor</th>
+                    <th>Tipo</th>
+                    <th>Propuesta</th>
+                    <th colspan="2">Decisión</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% postList.forEach((post) => { %>
+                <tr>
+                    <% if (post.privacy == 'pendiente') { %>
+                        <td><%- post.email %></td>
+                        <td><%- post.type %></td>
+                        <td><%- post.body %></td>
+                        <td><form action="<%- aprueboPath(post) %>" method="POST">
+                                <input type="hidden" name="_method" value="patch" />
+                                <input type="submit" value="Apruebo" />
+                            </form>
+                        </td>
+                        <td><form action="<%- rechazoPath(post) %>" method="POST">
+                                <input type="hidden" name="_method" value="patch" />
+                                <input type="submit" value="Rechazo" />
+                            </form>
+                        </td>
+                        <% } %>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+
+    <h1>Publicaciones aprobadas:</h1>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Autor</th>
+                    <th>Tipo</th>
+                    <th>Propuesta</th>
+                    <th>Aprobada por</th>
+                    <th></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <% postList.forEach((post) => { %>
+                <tr>
+                    <% if (post.privacy == 'aprobado') { %>
+                        <td><%- post.email %></td>
+                        <td><%- post.type %></td>
+                        <td><%- post.body %></td>
+                        <td><%- post.autorCambio %></td>
+                        <td><form action="<%- rechazoPath(post) %>" method="POST">
+                                <input type="hidden" name="_method" value="patch" />
+                                <input type="submit" value="Rechazo" />
+                            </form>
+                        </td>
+                        
+                        <% } %>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+    <h1>Publicaciones rechazadas:</h1>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Autor</th>
+                    <th>Tipo</th>
+                    <th>Propuesta</th>
+                    <th>Rechazada por</th>
+                    <th></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <% postList.forEach((post) => { %>
+                <tr>
+                    <% if (post.privacy == 'rechazado') { %>
+                        <td><%- post.email %></td>
+                        <td><%- post.type %></td>
+                        <td><%- post.body %></td>
+                        <td><%- post.autorCambio %></td>
+                        <td><form action="<%- aprueboPath(post) %>" method="POST">
+                                <input type="hidden" name="_method" value="patch" />
+                                <input type="submit" value="Apruebo" />
+                            </form>
+                        </td>
+                        
+                        <% } %>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+
+</section>
