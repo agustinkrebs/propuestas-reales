@@ -61,6 +61,7 @@ async function associate(post, min, ctx) {
 }
 
 router.post('posts.create', '/', async (ctx) => {
+  const ministries = await ctx.orm.ministry.findAll();
   const post = ctx.orm.post.build(ctx.request.body);
   const privacy = ctx.request.body.privacy === 'anonymous';
   post.privacy = privacy;
@@ -70,8 +71,11 @@ router.post('posts.create', '/', async (ctx) => {
   } catch (validationError) {
     await ctx.render('posts/new', {
       post,
+      ministries,
       errors: validationError.errors,
       submitPostPath: ctx.router.url('posts.create'),
+      PostIndexPath: ctx.router.url('posts.list'),
+
     });
   }
 
