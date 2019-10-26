@@ -20,6 +20,11 @@ async function postsWithMinistries(posts) {
   return newPosts;
 }
 
+async function loadPost(ctx, next) {
+  ctx.state.post = await ctx.orm.post.findById(ctx.params.id);
+  return next();
+}
+
 router.get('posts.list', '/', async (ctx) => {
   const originalPosts = await ctx.orm.post.findAll();
   const posts = await postsWithMinistries(originalPosts);
@@ -30,6 +35,13 @@ router.get('posts.list', '/', async (ctx) => {
     posts,
     ministries,
     newPostPath: ctx.router.url('posts.new'),
+  });
+});
+
+router.get('posts.approval', '/approval', async (ctx) => {
+  const posts = await ctx.orm.post.findAll();
+  await ctx.render('posts/approval', {
+    posts
   });
 });
 
