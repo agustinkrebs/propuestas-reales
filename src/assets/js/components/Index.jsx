@@ -2,14 +2,12 @@ import React, { Component } from 'react';
 
 function ListItem(props) {
   const post = props.value;
+  const showMinistries = post.ministries.map((m) => <p class="area">{m}</p>);
   return (
       <div class="post-container">
       <div class="areas-container">
           <h4 class="area-header">Área(s):</h4>
-          <p class="area">Area 1</p>
-          <p class="area">Area 2</p>
-          <p class="area">Area 1</p>
-          <p class="area">Area 2</p>
+          {showMinistries}
   
       </div>
       <div class="body-container">
@@ -19,7 +17,7 @@ function ListItem(props) {
       <p class="id">{post.id}</p>
   </div>
   ); 
-}
+} 
 
 export default class PostListComponent extends Component {
   constructor(props) {
@@ -27,7 +25,7 @@ export default class PostListComponent extends Component {
   }
 
   render() {
-    const { posts, ministries } = this.props;
+    const { posts } = this.props;
     if (!posts.length) {
       return (<p>No hay propuestas</p>);
     }
