@@ -1,5 +1,11 @@
 <h1> Hello World </h1>
 <% posts.forEach((post) => { %>
     <p> Privacy <%= post.privacy %> , Body  <%= post.body %> </p>
+    <form  action="<%- deletePostPath(post) %>" method="POST">
 
+        <input type="hidden" name="_method" value="delete" />
+        <button class="button_delete" type="submit" name="create"  value="delete">
+            Eliminar 
+        </button>
+    </form>
     <% })%>

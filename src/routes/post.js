@@ -16,7 +16,7 @@ async function postsWithMinistries(posts) {
 }
 
 async function loadPost(ctx, next) {
-  ctx.state.post = await ctx.orm.post.findById(ctx.params.id);
+  ctx.state.post = await ctx.orm.post.findByPk(ctx.params.id);
   return next();
 }
 
@@ -34,9 +34,17 @@ router.get('posts.list', '/', async (ctx) => {
 router.get('posts.approval', '/approval', async (ctx) => {
   const posts = await ctx.orm.post.findAll();
   await ctx.render('posts/approval', {
-    posts
+    posts,
+    deletePostPath: (post)=> ctx.router.url('posts.delete', { id: post.id }),
   });
 });
+
+router.del('posts.delete', '/:id', loadPost, async (ctx) => {
+  const { post } = ctx.state;
+  await post.destroy();
+  ctx.redirect(ctx.router.url('posts.approval'));
+});
+
 
 router.get('posts.new', '/new', async (ctx) => {
   const ministries = await ctx.orm.ministry.findAll();
