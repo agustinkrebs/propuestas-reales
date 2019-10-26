@@ -4,24 +4,15 @@
     
 <div id="ministries"></div>
 <script type="text/javascript">
-  console.log("Cargando JS en HTML...");
-  var ministriesList=[<% ministries.map((m) => { %>
-                  <%- `'${[m.ministry, '&', m.id]}',` %>
-              <% })%>];
-  console.log('Ministerios desde backend: ')
+   var ministriesList=[<% ministries.map((m) => { %>
+                  <%- `'${JSON.stringify(m)}',` %>
+              <% }) %>];
 </script>  
-</div>
 
 <div id="posts"></div>
 <script type="text/javascript">
-  console.log("Cargando JS en HTML...");
   var postList=[<% posts.map((p) => { %>
-                  <%- `'${[p.id, '&', p.privacy, '&', p.email, '&', p.instagram,  '&', p.type, '&', p.body, '&', p.getMinistries()]}',` %>
-              <% })%>];
-  console.log('Posts desde backend: ')
+                  <%- `'${JSON.stringify(p)}',` %>
+              <% }) %>];
 </script>  
-</div>
-
-<p>
   <div id="react-index"></div>
-</p>
