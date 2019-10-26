@@ -4,8 +4,10 @@ const router = new KoaRouter();
 
 router.get('posts.list', '/', async (ctx) => {
   const posts = await ctx.orm.post.findAll();
+  const ministries = await ctx.orm.ministry.findAll();
   await ctx.render('posts/index', {
     posts,
+    ministries,
     newPostPath: ctx.router.url('posts.new')
  });
 });
