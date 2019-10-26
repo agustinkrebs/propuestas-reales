@@ -4,19 +4,14 @@ const router = new KoaRouter();
 
 async function postsWithMinistries(posts) {
   const newPosts = [];
-  for ( let i=0; i < posts.length; i++){
+  for(let i=0; i < posts.length; i++) {
     let p = posts[i];
     const ministries = await p.getMinistries();
-    // console.log("MINISTRIES");
     let minList = ministries.map((m) => m.ministry);
-    // console.log(minList);
-    //console.log(ministries);
     let newPost = {ministries: minList};
     let copy = Object.assign(newPost, p.dataValues);
     newPosts.push(copy);
   }
-  console.log("NEW POSTS");
-  console.log(newPosts);
   return newPosts;
 }
 
@@ -28,8 +23,6 @@ async function loadPost(ctx, next) {
 router.get('posts.list', '/', async (ctx) => {
   const originalPosts = await ctx.orm.post.findAll();
   const posts = await postsWithMinistries(originalPosts);
-  // console.log("UN POST NUEVO");
-  // console.log(posts[0]);
   const ministries = await ctx.orm.ministry.findAll();
   await ctx.render('posts/index', {
     posts,

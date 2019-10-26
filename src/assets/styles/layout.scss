@@ -5,169 +5,117 @@ html, body {
   background-color:rgb(240, 240, 240);
 }
 
+.new-post-button-container{
+  width: 61%;
+  margin: 8px 0;
+}
+
+.new-post-button{
+  width: 100%;
+  background-color: #1ab188;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 25px;
+  border-radius: 8px;
+  padding: 10px 0;
+}
+
+#react-index{
+  width: 61%;
+  select{
+    width: 100%;
+  }
+}
+
+.inner-posts-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  background-color:rgb(30, 30, 30);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+  height: 50px;
+
+  .navbar-logo {
+    height: 100%;
+    width: auto;
+    
+    img {
+      max-height: 100%;
+      width: auto;
+    }
+  }
+}
+
+.content-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-container{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 20px 0px 20px;
+  margin: 18px 0;
+  border-radius: 10px;
+
+  .id{
+    margin: 0 10 0 0px;
+    align-self: center;
+
+  }
+
+  .areas-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .area-header{
+      margin: 8px 8px 8px 12px;
+    }
+
+    .area{
+      background-color: #1ab188;
+      margin: 0 5px;
+      padding: 2px 4px;
+      border-radius: 5px;
+    }
+
+
+  }
+  .body-container{
+    display: flex;
+    flex-direction: column;
+
+    .propuesta-header{
+      margin: 8px 8px 0 12px;
+    }
+
+    .body{
+      font-style: italic;
+      hyphens: auto;
+      text-align: justify;
+      margin: 0 5px;
+      padding: 10px 25px;
+      border-radius: 5px;
+    }
+
+
+  }
+
+}
+
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  .navbar {
-    background-color:rgb(30, 30, 30);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 30px;
-    height: 50px;
-  
-    .navbar-logo {
-      height: 100%;
-      width: auto;
-      
-      img {
-        max-height: 100%;
-        width: auto;
-      }
-    }
-  }
-  
-  .content-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .post-container{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    width: 61%;
-    padding: 20px 20px 0px 20px;
-    margin: 18px 0;
-    border-radius: 10px;
-  
-    .id{
-      margin: 0 10 0 0px;
-      align-self: center;
-  
-    }
-  
-    .areas-container{
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-  
-      .area-header{
-        margin: 8px 8px 8px 12px;
-      }
-  
-      .area{
-        background-color: #1ab188;
-        margin: 0 5px;
-        padding: 2px 4px;
-        border-radius: 5px;
-      }
-  
-  
-    }
-    .body-container{
-      display: flex;
-      flex-direction: column;
-  
-      .propuesta-header{
-        margin: 8px 8px 0 12px;
-      }
-  
-      .body{
-        font-style: italic;
-        hyphens: auto;
-        text-align: justify;
-        margin: 0 5px;
-        padding: 10px 25px;
-        border-radius: 5px;
-      }
-  
-  
-    }
-  
-  }
 }
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-  .navbar {
-    background-color:rgb(30, 30, 30);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 30px;
-    height: 50px;
-  
-    .navbar-logo {
-      height: 100%;
-      width: auto;
-      
-      img {
-        max-height: 100%;
-        width: auto;
-      }
-    }
-  }
-  
-  .content-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .post-container{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(245, 245, 245);
-    width: 90%;
-    padding: 20px 20px 0px 20px;
-    margin: 18px 0;
-    border-radius: 10px;
-  
-    .id{
-      margin: 0 10 0 0px;
-      align-self: center;
-  
-    }
-  
-    .areas-container{
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-  
-      .area-header{
-        margin: 8px 8px 8px 12px;
-      }
-  
-      .area{
-        background-color: #1ab188;
-        margin: 0 5px;
-        padding: 2px 4px;
-        border-radius: 5px;
-      }
-  
-  
-    }
-    .body-container{
-      display: flex;
-      flex-direction: column;
-  
-      .propuesta-header{
-        margin: 8px 8px 0 12px;
-      }
-  
-      .body{
-        font-style: italic;
-        hyphens: auto;
-        text-align: justify;
-        margin: 0 5px;
-        padding: 10px 25px;
-        border-radius: 5px;
-      }
-  
-  
-    }
-  
-  }
 }

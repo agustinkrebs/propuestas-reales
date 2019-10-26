@@ -48,26 +48,26 @@ export default class PostList extends Component {
   render() {
     const ministryOptions = this.state.ministries.map((m) => <option value={m.ministry}>{m.ministry}</option>);
     return (
-      <div>
-        <div>
-            <select id="content" name="type" value={this.state.value} onChange={this.typeFilter}>
-        <option value="-">- Tipo -</option>
-        <option value="law">Reforma/cambio a un Proyecto de Ley</option>
-        <option value="citizen-project">Proyecto ciudadano</option>
-        <option value="company-project">Proyecto dirigido a empresas</option>
-      </select>
-          </div>
+      <div className="react-index-container">
+        <h3>Filtra las propuestas:</h3>
+        <div className="filter-type-container">
+          <select id="content" name="type" onChange={this.typeFilter}>
+            <option value="-">- Tipo -</option>
+            <option value="law">Reforma/cambio a un Proyecto de Ley</option>
+            <option value="citizen-project">Proyecto ciudadano</option>
+            <option value="company-project">Proyecto dirigido a empresas</option>
+          </select>
+        </div>
+        <div className="ministries-container">
+          <select id="content" name="ministry" onChange={this.ministryFilter}>
+            <option value="-">- Categoria -</option>
+            {ministryOptions}
+          </select>
+        </div>
 
-        <div>
-      <select id="content" name="ministry" value={this.state.value} onChange={this.ministryFilter}>
-        <option value="-">- Categoria -</option>
-        {ministryOptions}
-      </select>
-    </div>
-
-        <div>
-            <PostListComponent posts={this.state.filteredPosts} />
-          </div>
+        <div className="posts-container">
+          <PostListComponent posts={this.state.filteredPosts} />
+        </div>
       </div>
     );
   }
