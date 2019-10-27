@@ -58,9 +58,11 @@ router.post('posts.create', '/', async (ctx) => {
   const post = ctx.orm.post.build(ctx.request.body);
   const privacy = ctx.request.body.privacy === 'anonymous';
   post.privacy = privacy;
+  post.rating = 0;
+  post.approved = false;
 
   try {
-    await post.save({ fields: ['privacy', 'email', 'instagram', 'type', 'body'] });
+    await post.save({ fields: ['privacy', 'email', 'instagram', 'type', 'body', 'rating', 'approved'] });
   } catch (validationError) {
     await ctx.render('posts/new', {
       post,

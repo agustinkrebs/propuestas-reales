@@ -4,7 +4,9 @@ import PostListComponent from '../components/Index';
 
 function postObject(posts) {
   const rPosts = posts.reverse();
+  console.log(rPosts[0]);
   const objectList = rPosts.map((p) => JSON.parse(p));
+  console.log(rPosts[0]);
   return objectList;
 }
 
