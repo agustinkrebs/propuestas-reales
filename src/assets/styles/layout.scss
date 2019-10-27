@@ -14,7 +14,7 @@ html, body {
   width: 100%;
   background-color: #1ab188;
   font-family: 'Fira Sans', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 8px;
   padding: 10px 0;
 }
@@ -23,6 +23,9 @@ html, body {
   width: 61%;
   select{
     width: 100%;
+    option{
+      padding: 10px;
+    }
   }
 }
 
