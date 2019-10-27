@@ -49,14 +49,14 @@ router.get('login.view', '/login-view', async (ctx) => {
 router.patch('post.aprobar', '/apruebo/:id', loadPost, async (ctx) => {
   const { post } = ctx.state;
   const user = await ctx.orm.user.findOne({ where: { id:  ctx.session.userId} });
-  await post.update({ privacy: 'aprobado', autorCambio:  user.mail});
+  await post.update({ status: 'aprobado', autorCambio:  user.mail});
   ctx.redirect(ctx.router.url('login.view'));
 });
 
 router.patch('post.rechazar', '/rechazo/:id', loadPost, async (ctx) => {
   const { post } = ctx.state;
   const user = await ctx.orm.user.findOne({ where: { id:  ctx.session.userId} });
-  await post.update({ privacy: 'rechazado', autorCambio:  user.mail});
+  await post.update({ status: 'rechazado', autorCambio:  user.mail});
   ctx.redirect(ctx.router.url('login.view'));
 });
 

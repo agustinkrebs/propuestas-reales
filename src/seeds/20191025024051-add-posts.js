@@ -2,7 +2,8 @@ module.exports = {
   up(queryInterface) {
     const usersData = [
       {
-        privacy: 'aprobado',
+        status: 'aprobado',
+        privacy: '',
         email: 'usuario 1',
         instagram: 'insta usuaior',
         type: 'es el tipo',
@@ -13,7 +14,8 @@ module.exports = {
   
       },
       {
-        privacy: 'rechazado',
+        status: 'rechazado',
+        privacy: '',
         email: 'usuario 2',
         instagram: 'insta usuaior',
         type: 'es el tipo',
@@ -24,7 +26,8 @@ module.exports = {
   
       },
       {
-        privacy: 'pendiente',
+        status: 'pendiente',
+        privacy: '',
         email: 'usuario 4',
         instagram: 'insta usuaior',
         type: 'es el tipo',

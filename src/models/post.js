@@ -6,6 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     type: DataTypes.STRING,
     body: DataTypes.STRING,
     autorCambio: DataTypes.STRING,
+    status: DataTypes.STRING,
   }, {});
 
   post.associate = function associate(models) {

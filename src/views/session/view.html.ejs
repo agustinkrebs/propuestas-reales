@@ -17,7 +17,7 @@
             <tbody>
                 <% postList.forEach((post) => { %>
                 <tr>
-                    <% if (post.privacy == 'pendiente') { %>
+                    <% if (post.status == 'pendiente') { %>
                         <td><%- post.email %></td>
                         <td><%- post.type %></td>
                         <td><%- post.body %></td>
@@ -54,7 +54,7 @@
             <tbody>
                 <% postList.forEach((post) => { %>
                 <tr>
-                    <% if (post.privacy == 'aprobado') { %>
+                    <% if (post.status == 'aprobado') { %>
                         <td><%- post.email %></td>
                         <td><%- post.type %></td>
                         <td><%- post.body %></td>
@@ -87,7 +87,7 @@
             <tbody>
                 <% postList.forEach((post) => { %>
                 <tr>
-                    <% if (post.privacy == 'rechazado') { %>
+                    <% if (post.status == 'rechazado') { %>
                         <td><%- post.email %></td>
                         <td><%- post.type %></td>
                         <td><%- post.body %></td>
