@@ -145,9 +145,9 @@ export default class Form extends Component {
             <p>
               <select id="content" name="type" value={this.state.value} onChange={this.handleChange}>
                 <option value="-" selected>- tipo -</option>
-                <option value="law">Reforma/cambio a un Proyecto de Ley</option>
-                <option value="citizen-project">Proyecto ciudadano</option>
-                <option value="company-project">Proyecto dirigido a empresas</option>
+                <option value="Reforma/cambio a un Proyecto de Ley">Reforma/cambio a un Proyecto de Ley</option>
+                <option value="Proyecto ciudadano">Proyecto ciudadano</option>
+                <option value="Proyecto dirigido a empresas">Proyecto dirigido a empresas</option>
               </select>
 
             </p>
@@ -238,9 +238,9 @@ export default class Form extends Component {
             <p>
               <select id="content" name="type" value={this.state.value} onChange={this.handleChange}>
                 <option value="-" selected>- tipo -</option>
-                <option value="law">Reforma/cambio a un Proyecto de Ley</option>
-                <option value="citizen-project">Proyecto ciudadano</option>
-                <option value="company-project">Proyecto dirigido a empresas</option>
+                <option value="Reforma/cambio a un Proyecto de Ley">Reforma/cambio a un Proyecto de Ley</option>
+                <option value="Proyecto ciudadano">Proyecto ciudadano</option>
+                <option value="Proyecto dirigido a empresas">Proyecto dirigido a empresas</option>
               </select>
 
             </p>
