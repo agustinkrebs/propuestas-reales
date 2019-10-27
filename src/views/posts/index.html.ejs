@@ -1,18 +1,16 @@
 <form class="new-post-button-container" action="<%- newPostPath %>">
-    <button class="new-post-button">¡Publicar nueva propuesta!</button>
+    <button class="new-post-button">Publicar nueva propuesta</button>
 </form>
     
-<div id="ministries"></div>
 <script type="text/javascript">
    var ministriesList=[<% ministries.map((m) => { %>
                   <%- `'${JSON.stringify(m)}',` %>
               <% }) %>];
 </script>  
 
-<div id="posts"></div>
 <script type="text/javascript">
   var postList=[<% posts.map((p) => { %>
-                  <%- `'${JSON.stringify(p)}',` %>
+                  <%- `'${JSON.stringify(p).replace(/&quote&/g, "`")}',` %>
               <% }) %>];
 </script>  
-  <div id="react-index"></div>
+<div id="react-index"></div>

@@ -3,8 +3,10 @@ module.exports = (sequelize, DataTypes) => {
     privacy: DataTypes.BOOLEAN,
     email: DataTypes.STRING,
     instagram: DataTypes.STRING,
-    type: DataTypes.STRING,
+    type: DataTypes.STRING(1000),
     body: DataTypes.TEXT,
+    rating: DataTypes.FLOAT,
+    approved: DataTypes.BOOLEAN
   }, {});
 
   post.associate = function associate(models) {
