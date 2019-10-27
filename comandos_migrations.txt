@@ -1,3 +1,3 @@
-./node_modules/.bin/sequelize db:migrate:undo:all
-./node_modules/.bin/sequelize db:migrate
-./node_modules/.bin/sequelize db:seed:all
+heroku run ./node_modules/.bin/sequelize db:migrate:undo:all
+heroku run ./node_modules/.bin/sequelize db:migrate
+heroku run ./node_modules/.bin/sequelize db:seed:all
