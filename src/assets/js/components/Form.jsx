@@ -19,6 +19,7 @@ export default class Form extends Component {
       instagram: '',
       ministries: ministriesList,
       type: '',
+      typeError: '',
 
     };
     this.handleChange = this.handleChange.bind(this);
@@ -26,8 +27,11 @@ export default class Form extends Component {
     this.fileEvent = this.fileEvent.bind(this);
   }
 
+
   async onSubmit(event) {
     const data = new FormData();
+    console.log(description)
+    if (this.state.description){
     data.append('', this.state.photo);
     data.append('privacy', this.state.privacy);
     data.append('min1', this.state.min1);
@@ -64,6 +68,28 @@ export default class Form extends Component {
       body: data,
     });
     this.setState({ bye: true });
+  } 
+  if(!this.state.description) 
+  {
+
+    this.setState({descriptionError: "Tu propuesta esta vacía :("})
+  } else {
+    this.setState({descriptionError: ""})
+  }
+  if (!this.state.type)
+  {
+    this.setState({typeError: "Elige un tipo para tu propuesta :)"})
+  } else {
+    this.setState({typeError: ""})
+  }
+
+  if (this.state.privacy == 'private' && (!this.state.name))
+  {
+    this.setState({nameError: "Propuestas privadas requieren nombre"})
+  } else {
+    this.setState({nameError: ""})
+  }
+
     event.preventDefault();
   }
 
@@ -75,6 +101,7 @@ export default class Form extends Component {
     } else if (this.state.mail) {
       this.setState({ mailError: '' });
     }
+
   }
 
   fileEvent(event) {
@@ -160,6 +187,12 @@ export default class Form extends Component {
               {this.state.descriptionError}
               {' '}
             </p>
+            <p>
+              {' '}
+              {this.state.typeError}
+              {' '}
+            </p>
+            
           </div>
 
           <div>
@@ -167,7 +200,6 @@ export default class Form extends Component {
             Publicar
             </button>
           </div>
-
         </form>
       );
     }
@@ -190,20 +222,12 @@ export default class Form extends Component {
 
           <div className="field-wrap">
             <input className="input_form" value={this.state.name} placeholder="¿Cómo te llamas?" type="text" onChange={this.handleChange} id="name" name="name" />
-            <p>
-              {' '}
-              {this.state.nameError}
-              {' '}
-            </p>
+
           </div>
 
           <div className="field-wrap">
             <input className="input_form" value={this.state.instagram} placeholder="Cuenta de instagram*" type="text" onChange={this.handleChange} id="instagram" name="instagram" />
-            <p>
-              {' '}
-              {this.state.nameError}
-              {' '}
-            </p>
+
           </div>
 
           <div className="field-wrap">
@@ -251,6 +275,16 @@ export default class Form extends Component {
             <p>
               {' '}
               {this.state.descriptionError}
+              {' '}
+            </p>
+            <p>
+              {' '}
+              {this.state.typeError}
+              {' '}
+            </p>
+            <p>
+              {' '}
+              {this.state.nameError}
               {' '}
             </p>
           </div>
