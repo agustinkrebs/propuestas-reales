@@ -1,23 +1,73 @@
 html, body {
-  font-family: 'Fira Sans', sans-serif;
+  //font-family: 'Fira Sans', sans-serif;
+  //font-family: 'Roboto', sans-serif;
+  //font-family: 'Quicksand', sans-serif;
+  //font-family: 'Raleway', sans-serif;
+  font-family: 'Rubik', sans-serif;
   margin: 0;
   padding: 0;
-  background-color:rgb(240, 240, 240);
+  background-color:rgb(234, 237, 248);
 }
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+  height: 50px;
+  //position: fixed;
+  //top: 0;
+  //width: 100%;
+
+  .navbar-logo {
+    height: 100%;
+    width: auto;
+    
+    img {
+      max-height: 100%;
+      width: auto;
+    }
+  }
+
+  ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0 40px 0 0;
+
+    .navbar-button{
+      display: flex;
+      justify-content: center;
+      font-size: 15px;
+      width: 200px;
+      padding: 10px 15px;
+      border-radius: 30px;
+      text-decoration: None;
+      margin: 7px;
+      font-weight: bold;
+
+    }
+
+    #ver-ideas{
+      border-style: solid;
+      border-width: 1px;
+      border-color: black;
+      color: black;
+    }
+
+    #publicar-idea{
+      background-color: rgb(51, 56, 129);
+      color: white;
+    }
+  }
+}
+
 
 .new-post-button-container{
   width: 61%;
   margin: 8px 0;
 }
 
-.new-post-button{
-  width: 100%;
-  background-color: #1ab188;
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 20px;
-  border-radius: 8px;
-  padding: 10px 0;
-}
 
 #react-index{
   width: 61%;
@@ -35,24 +85,6 @@ html, body {
   align-items: center;
 }
 
-.navbar {
-  background-color:rgb(30, 30, 30);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 30px;
-  height: 50px;
-
-  .navbar-logo {
-    height: 100%;
-    width: auto;
-    
-    img {
-      max-height: 100%;
-      width: auto;
-    }
-  }
-}
 
 .content-container{
   display: flex;
@@ -66,6 +98,7 @@ html, body {
   background-color: rgb(255, 255, 255);
   margin: 18px 0;
   border-radius: 10px;
+  font-size: 20px;
 
   .type-part-container{
     display: flex;
@@ -217,7 +250,7 @@ html, body {
     }
 
     .body{
-      font-style: italic;
+      //font-style: italic;
       hyphens: auto;
       text-align: justify;
       margin: 0 5px;
