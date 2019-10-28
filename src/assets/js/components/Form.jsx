@@ -72,20 +72,20 @@ export default class Form extends Component {
   if(!this.state.description) 
   {
 
-    this.setState({descriptionError: "Tu propuesta esta vacía :("})
+    this.setState({descriptionError: "ERROR: Tu propuesta esta vacía"})
   } else {
     this.setState({descriptionError: ""})
   }
   if (!this.state.type)
   {
-    this.setState({typeError: "Elige un tipo para tu propuesta :)"})
+    this.setState({typeError: "ERROR: Elige un tipo para tu propuesta"})
   } else {
     this.setState({typeError: ""})
   }
 
   if (this.state.privacy == 'private' && (!this.state.name))
   {
-    this.setState({nameError: "Propuestas privadas requieren nombre"})
+    this.setState({nameError: "ERROR: Propuestas privadas requieren nombre"})
   } else {
     this.setState({nameError: ""})
   }
@@ -111,49 +111,34 @@ export default class Form extends Component {
   render() {
     const redirectToPosts = this.state.bye;
     if (redirectToPosts === true) {
-      return <h2>Gracias por tu propuesta!</h2>;
+      return <h2>¡Gracias por tu propuesta!</h2>;
     }
 
     if (!this.state.privacy) {
       return (
-
         <form onSubmit={this.onSubmit} encType="multipart/form-data">
-
-          <label>
-            ¿Qué carácter quieres que tenga tu propuesta?
-            <p>
-              <select id="privacy" name="privacy" value={this.state.value} onChange={this.handleChange}>
-                <option value="-">- carácter -</option>
-                <option value="anonymous">Anónima</option>
-                <option value="private">Privada</option>
-              </select>
-
-            </p>
-          </label>
-
+          <h3>¿Quieres que tu propuesta sea anónima?</h3>
+          <select id="privacy" name="privacy" value={this.state.value} onChange={this.handleChange}>
+            <option value="" disabled selected>Respuesta:</option>
+            <option value="anonymous">Sí</option>
+            <option value="private">No</option>
+          </select>
         </form>
       );
     }
     if (this.state.privacy == 'anonymous') {
       return (
-
         <form onSubmit={this.onSubmit} encType="multipart/form-data">
-
-          <label>
-          ¿Qué carácter quieres que tenga tu propuesta?
-            <p>
-              <select id="privacy" name="privacy" value={this.state.value} onChange={this.handleChange}>
-                <option value="-">- carácter -</option>
-                <option value="anonymous">Anónima</option>
-                <option value="private">Privada</option>
-              </select>
-
-            </p>
-          </label>
+          <h3>¿Quieres que tu propuesta sea anónima?</h3>
+          <select id="privacy" name="privacy" value={this.state.value} onChange={this.handleChange}>
+            <option value="" disabled selected>Respuesta:</option>
+            <option value="anonymous">Sí</option>
+            <option value="private">No</option>
+          </select>
 
 
           <div className="field-wrap">
-            <label htmlFor="area">¿A qué área(s) está asociada tu propuesta?</label>
+            <h3>¿A qué área(s) está asociada tu propuesta?</h3>
             {this.state.ministries.map((min) => {
               const minTuple = min.split(',&,');
               return (
@@ -167,36 +152,29 @@ export default class Form extends Component {
             })}
           </div>
 
-          <label>
-          ¿De qué forma quieres que impacte tu proyecto?
-            <p>
-              <select id="content" name="type" value={this.state.value} onChange={this.handleChange}>
-                <option value="-" selected>- tipo -</option>
-                <option value="Reforma/cambio a un Proyecto de Ley">Reforma/cambio a un Proyecto de Ley</option>
-                <option value="Proyecto ciudadano">Proyecto ciudadano</option>
-                <option value="Proyecto dirigido a empresas">Proyecto dirigido a empresas</option>
-              </select>
-
-            </p>
-          </label>
+          <h3>¿Cómo clasificarías tu propuesta?</h3>
+          <select id="content" name="type" value={this.state.value} onChange={this.handleChange}>
+            <option value="-" selected>Respuesta:</option>
+            <option value="Reforma/cambio a un Proyecto de Ley">Reforma/cambio a un Proyecto de Ley</option>
+            <option value="Proyecto ciudadano">Proyecto ciudadano</option>
+            <option value="Proyecto dirigido a empresas">Proyecto dirigido a empresas</option>
+          </select>
 
           <div className="field-wrap">
-            <p><input className="input_form" value={this.state.description} placeholder="Decribenos tu proyecto" type="text" onChange={this.handleChange} id="description" name="description" /></p>
+            <textarea className="post-body" value={this.state.description} placeholder="Describe tu propuesta" type="text" onChange={this.handleChange} id="description" name="description" />
+          </div>
+
+          <div className="errors-container">
             <p>
-              {' '}
               {this.state.descriptionError}
-              {' '}
             </p>
             <p>
-              {' '}
               {this.state.typeError}
-              {' '}
             </p>
-            
           </div>
 
           <div>
-            <button type="submit" className="button button-block">
+            <button className="publicar-button" type="submit">
             Publicar
             </button>
           </div>
@@ -208,25 +186,20 @@ export default class Form extends Component {
 
         <form onSubmit={this.onSubmit} encType="multipart/form-data">
 
-          <label>
-    ¿Qué carácter quieres que tenga tu propuesta?
-            <p>
-              <select id="privacy" name="privacy" value={this.state.value} onChange={this.handleChange}>
-                <option value="-">- carácter -</option>
-                <option value="anonymous">Anónima</option>
-                <option value="private">Privada</option>
-              </select>
-
-            </p>
-          </label>
+          <h3>¿Quieres que tu propuesta sea anónima?</h3>
+          <select id="privacy" name="privacy" value={this.state.value} onChange={this.handleChange}>
+            <option value="" disabled selected>Respuesta:</option>
+            <option value="anonymous">Sí</option>
+            <option value="private">No</option>
+          </select>
 
           <div className="field-wrap">
-            <input className="input_form" value={this.state.name} placeholder="¿Cómo te llamas?" type="text" onChange={this.handleChange} id="name" name="name" />
+            <textarea className="form-input" value={this.state.name} placeholder="¿Cómo te llamas?" type="text" onChange={this.handleChange} id="name" name="name" />
 
           </div>
 
           <div className="field-wrap">
-            <input className="input_form" value={this.state.instagram} placeholder="Cuenta de instagram*" type="text" onChange={this.handleChange} id="instagram" name="instagram" />
+            <textarea className="input_form" value={this.state.instagram} placeholder="Cuenta de instagram (opcional)" type="text" onChange={this.handleChange} id="instagram" name="instagram" />
 
           </div>
 
@@ -234,7 +207,7 @@ export default class Form extends Component {
             <label>
               <span className="req" />
             </label>
-            <input className="input_form" placeholder="email@example.org*" value={this.state.mail} type="text" onChange={this.handleChange} id="mail" name="mail" />
+            <textarea className="input_form" placeholder="Correo (opcional)" value={this.state.mail} type="text" onChange={this.handleChange} id="mail" name="mail" />
             <p>
               {' '}
               {this.state.mailError}
@@ -243,7 +216,7 @@ export default class Form extends Component {
           </div>
 
           <div className="field-wrap">
-            <label htmlFor="area">¿A qué área(s) está asociada tu propuesta?</label>
+            <h3>¿A qué área(s) está asociada tu propuesta?</h3>
             {this.state.ministries.map((min) => {
               const minTuple = min.split(',&,');
               return (
@@ -257,21 +230,16 @@ export default class Form extends Component {
             })}
           </div>
 
-          <label>
-    ¿De qué forma quieres que impacte tu proyecto?
-            <p>
-              <select id="content" name="type" value={this.state.value} onChange={this.handleChange}>
-                <option value="-" selected>- tipo -</option>
-                <option value="Reforma/cambio a un Proyecto de Ley">Reforma/cambio a un Proyecto de Ley</option>
-                <option value="Proyecto ciudadano">Proyecto ciudadano</option>
-                <option value="Proyecto dirigido a empresas">Proyecto dirigido a empresas</option>
-              </select>
-
-            </p>
-          </label>
+          <h3>¿Cómo clasificarías tu propuesta?</h3>
+          <select id="content" name="type" value={this.state.value} onChange={this.handleChange}>
+            <option value="-" selected>Respuesta: </option>
+            <option value="Reforma/cambio a un Proyecto de Ley">Reforma/cambio a un Proyecto de Ley</option>
+            <option value="Proyecto ciudadano">Proyecto ciudadano</option>
+            <option value="Proyecto dirigido a empresas">Proyecto dirigido a empresas</option>
+          </select>
 
           <div className="field-wrap">
-            <p><input className="input_form" value={this.state.description} placeholder="Decribenos tu proyecto" type="text" onChange={this.handleChange} id="description" name="description" /></p>
+            <textarea className="post-body" value={this.state.description} placeholder="Describe tu propuesta" type="text" onChange={this.handleChange} id="description" name="description" />
             <p>
               {' '}
               {this.state.descriptionError}
@@ -290,7 +258,7 @@ export default class Form extends Component {
           </div>
 
           <div>
-            <button type="submit" className="button button-block">
+            <button type="submit" className="publicar-button">
               Publicar
             </button>
           </div>
