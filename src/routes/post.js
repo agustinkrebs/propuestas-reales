@@ -21,7 +21,7 @@ async function loadPost(ctx, next) {
 }
 
 router.get('posts.list', '/', async (ctx) => {
-  const originalPosts = await ctx.orm.post.findAll();
+  const originalPosts = await ctx.orm.post.findAll({ where: { status: 'aprobado' },});
   const posts = await postsWithMinistries(originalPosts);
   const ministries = await ctx.orm.ministry.findAll();
   await ctx.render('posts/index', {
