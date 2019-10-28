@@ -3,10 +3,10 @@ module.exports = {
     const usersData = [
       {
         status: 'aprobado',
-        privacy: '',
+        privacy: true,
         email: 'usuario 1',
         instagram: 'insta usuaior',
-        type: 'es el tipo',
+        type: '-',
         body: 'me parecebee akjfnkdjf',
         autorCambio: '',
         createdAt: new Date(),
@@ -15,10 +15,10 @@ module.exports = {
       },
       {
         status: 'rechazado',
-        privacy: '',
+        privacy: true,
         email: 'usuario 2',
         instagram: 'insta usuaior',
-        type: 'es el tipo',
+        type: '-',
         body: 'me parecebee kajsbakjdbaskjdbaskjdbakb',
         autorCambio: '',
         createdAt: new Date(),
@@ -27,10 +27,10 @@ module.exports = {
       },
       {
         status: 'pendiente',
-        privacy: '',
+        privacy: false,
         email: 'usuario 4',
         instagram: 'insta usuaior',
-        type: 'es el tipo',
+        type: '-',
         body: 'me parecebee kajsbakjdbaskjdbaskjdbakb',
         autorCambio: '',
         createdAt: new Date(),

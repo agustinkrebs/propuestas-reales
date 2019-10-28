@@ -8,7 +8,7 @@ module.exports = {
     },
 
     privacy: {
-      type: Sequelize.STRING,
+      type: Sequelize.BOOLEAN,
     },
     email: {
       type: Sequelize.STRING,

@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
   const post = sequelize.define('post', {
-    privacy: DataTypes.STRING,
+    privacy: DataTypes.BOOLEAN,
     email: DataTypes.STRING,
     instagram: DataTypes.STRING,
     type: DataTypes.STRING,
