@@ -41,6 +41,7 @@
     "bcrypt": "^1.0.3",
     "core-js": "^3.2.1",
     "faker": "^4.1.0",
+    "jsonapi-serializer": "^3.6.4",
     "koa": "^2.7.0",
     "koa-body": "^4.1.1",
     "koa-ejs": "^4.2.0",
@@ -52,7 +53,6 @@
     "koa-static": "^5.0.0",
     "nodemailer": "^6.3.1",
     "pg": "^7.12.1",
-    "jsonapi-serializer": "^3.6.4",
     "pg-hstore": "^2.3.3",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
@@ -63,7 +63,7 @@
     "sequelize-cli": "^5.5.0"
   },
   "engines": {
-    "node": "8.9.4",
+    "node": "8.10",
     "yarn": "^1.0.2"
   }
 }
