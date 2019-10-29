@@ -21,7 +21,7 @@ async function loadPost(ctx, next) {
 }
 
 router.get('posts.list', '/', async (ctx) => {
-  const originalPosts = await ctx.orm.post.findAll();
+  const originalPosts = await ctx.orm.post.findAll({ where: { status: 'aprobado' },});
   const posts = await postsWithMinistries(originalPosts);
   const ministries = await ctx.orm.ministry.findAll();
   await ctx.render('posts/index', {
@@ -59,10 +59,10 @@ router.post('posts.create', '/', async (ctx) => {
   const privacy = ctx.request.body.privacy === 'anonymous';
   post.privacy = privacy;
   post.rating = 0;
-  post.approved = false;
+  post.status = "pendiente";
 
   try {
-    await post.save({ fields: ['privacy', 'email', 'instagram', 'type', 'body', 'rating', 'approved'] });
+    await post.save({ fields: ['privacy', 'email', 'instagram', 'type', 'body', 'rating', 'status'] });
   } catch (validationError) {
     await ctx.render('posts/new', {
       post,

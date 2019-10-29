@@ -22,7 +22,12 @@ module.exports = {
     body: {
       type: Sequelize.TEXT,
     },
-
+    autorCambio: {
+      type: Sequelize.STRING,
+    },
+    status: {
+      type: Sequelize.STRING,
+    },
     createdAt: {
       allowNull: false,
       type: Sequelize.DATE,
@@ -31,12 +36,6 @@ module.exports = {
       allowNull: false,
       type: Sequelize.DATE,
     },
-    
-    approved: {
-      allowNull: false,
-      type: Sequelize.BOOLEAN,
-    },
-
     rating: {
       allowNull: false,
       type: Sequelize.INTEGER,

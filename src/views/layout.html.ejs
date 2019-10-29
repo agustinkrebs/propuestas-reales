@@ -5,16 +5,25 @@
   <head>
     <meta charset="utf-8">
     <title>Propuestas Reales</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik300:700&display=swap" rel="stylesheet">
     <% if (env !== 'development') { %>
       <link rel="stylesheet" href="<%= assetPath('app.css') %>">
-      <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
-    <% } %>
+      <% } %>
   </head>
 
   <body>
     <header>
       <nav class="navbar">
-        <a class="navbar-logo" href="/"><img src="<%= assetPath('logo_horizontal_propuestas_reales.png') %>" alt="Logo"/></a>
+        <!--<a class="navbar-logo" href="/"><img src="<%= assetPath('logo_horizontal_propuestas_reales.png') %>" alt="Logo"/></a>-->
+        <a class="navbar-logo" href="/"><img src="<%= assetPath('logo_horizontal_propuestas_reales_black.png') %>" alt="Logo"/></a>
+        <ul>
+          <li><a href="/posts" class="navbar-button" id="ver-ideas">Ver ideas</a></li>
+          <li><a href="/posts/new" class="navbar-button" id="publicar-idea">Publica tu idea</a></li>
+        </ul>
       </nav>
     </header>
     <div class="content-container">

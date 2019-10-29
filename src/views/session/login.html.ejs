@@ -1,0 +1,40 @@
+<section class="form">
+
+    <% if (locals.errors) { %>
+      <div class="errors">
+        You need to fix the following errors:
+        <ul>
+          <% errors.forEach(error => { %>
+            <li><%= error.message %></li>
+          <% }); %>
+        </ul>
+      </div>
+    <% } %>
+      
+        <div>
+          <p> Iniciar sesion </p>
+      
+          <form action="<%= checkSessionPath %>" method="post">
+      
+            <input type="hidden" name="_method" value="put" />
+      
+            <div class="field-wrap">
+                <label>
+                  <span class="req"></span>
+                </label>
+                <input class='input_form'  placeholder='email@example.org*' type="text" name="mail" value="<%= locals.mail %>" />
+            </div>
+      
+            <div class="field-wrap">
+                <label>
+                  <span class="req"></span>
+                </label>
+                <input  class='input_form'  placeholder='password*' type="password" name="password" value="<%= locals.password %>" /><br>
+            </div>
+      
+            <button type="submit" class="button button-block">
+                Iniciar Sesion
+              </button>
+          </form>
+      
+        </section>
