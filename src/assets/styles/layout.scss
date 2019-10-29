@@ -343,8 +343,8 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 30px;
-    height: 100px;
+    padding: 0px 30px;
+    height: 80px;
 
   
     .navbar-logo {
@@ -361,17 +361,17 @@ html, body {
       display: flex;
       flex-direction: column;
       list-style-type: none;
-      padding: 0 40px 0 0;
+      padding: 0 0px 0 0;
   
       .navbar-button{
         display: flex;
         justify-content: center;
         font-size: 12px;
-        width: 130px;
-        padding: 5px;
+        width: 120px;
+        padding: 4px;
         border-radius: 30px;
         text-decoration: None;
-        margin: 2px 20px;
+        margin: 2px 2px;
         font-weight: bold;
   
       }
