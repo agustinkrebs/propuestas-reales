@@ -138,16 +138,12 @@ html, body {
   
   select{
     box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  border:1px solid #BEBEBE;
-  padding: 7px;
-  margin:0px;
-  -webkit-transition: all 0.30s ease-in-out;
-  -moz-transition: all 0.30s ease-in-out;
-  -ms-transition: all 0.30s ease-in-out;
-  -o-transition: all 0.30s ease-in-out;
-  outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin: 0 0 3px 0;
+    outline: none;
   }
   
   .inner-posts-container{
@@ -201,7 +197,7 @@ html, body {
         }
   
         p{
-          margin: 0 5px;
+          margin: 0 5px 7px;
           padding: 2px 4px;
           border-radius: 5px;
         }
@@ -323,10 +319,10 @@ html, body {
       .body{
         //font-style: italic;
         hyphens: auto;
-        text-align: justify;
         margin: 0 5px;
         padding: 10px 25px;
         border-radius: 5px;
+        max-width: 100%;
       }
   
   
@@ -466,11 +462,7 @@ html, body {
     -moz-box-sizing: border-box;
     border:1px solid #BEBEBE;
     padding: 7px;
-    margin:0px;
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
+    margin: 0 0 7px 0;
     outline: none;
   }
   
@@ -525,7 +517,7 @@ html, body {
         }
   
         p{
-          margin: 0 5px;
+          margin: 0 3px 7px;
           padding: 2px 2px;
           border-radius: 5px;
         }
