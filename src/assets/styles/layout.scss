@@ -9,86 +9,77 @@ html, body {
   background-color:rgb(234, 237, 248);
 }
 
-.form-page-container{
-  background-color: rgb(51, 56, 129);
-  padding: 50px;
-  margin: 20px;
-  width: 70%;
-  border-radius: 20px;
-  color: white;
 
-  select, textarea {
-    width: 100%;
-    margin: 0 0 10px 0;
-  }
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
 
-  .form-button{
+  .navbar {
+    background-color: white;
     display: flex;
-    justify-content: center;
-    font-size: 15px;
-    width: 200px;
-    padding: 10px 15px;
-    border-radius: 30px;
-    text-decoration: None;
-    margin: 7px;
-    font-weight: bold;
-    color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-color: white;
-    color: white;
-  }
-
-  .publicar-button{
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
-    width: 200px;
-    padding: 10px 15px;
-    border-radius: 30px;
-    text-decoration: None;
-    margin: 7px;
-    font-weight: bold;
-    color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-color: white;
-    color: rgb(51, 56, 129);
-  }
-
-  .post-body{
-    height: 100px;
-  }
-}
-
-
-.navbar {
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 30px;
-  height: 50px;
-  //position: fixed;
-  //top: 0;
-  //width: 100%;
-
-  .navbar-logo {
-    height: 100%;
-    width: auto;
-    
-    img {
-      max-height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    height: 50px;
+    //position: fixed;
+    //top: 0;
+    //width: 100%;
+  
+    .navbar-logo {
+      height: 100%;
       width: auto;
+      
+      img {
+        max-height: 100%;
+        width: auto;
+      }
+    }
+  
+    ul{
+      display: flex;
+      list-style-type: none;
+      padding: 0 40px 0 0;
+  
+      .navbar-button{
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        width: 200px;
+        padding: 10px 15px;
+        border-radius: 30px;
+        text-decoration: None;
+        margin: 7px;
+        font-weight: bold;
+  
+      }
+  
+      #ver-ideas{
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        color: black;
+      }
+  
+      #publicar-idea{
+        background-color: rgb(51, 56, 129);
+        color: white;
+      }
     }
   }
 
-  ul{
-    display: flex;
-    list-style-type: none;
-    padding: 0 40px 0 0;
-
-    .navbar-button{
+  .form-page-container{
+    background-color: rgb(51, 56, 129);
+    padding: 50px;
+    margin: 20px;
+    width: 70%;
+    border-radius: 20px;
+    color: white;
+  
+    select, textarea {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  
+    .form-button{
       display: flex;
       justify-content: center;
       font-size: 15px;
@@ -98,245 +89,573 @@ html, body {
       text-decoration: None;
       margin: 7px;
       font-weight: bold;
-
-    }
-
-    #ver-ideas{
+      color: white;
       border-style: solid;
       border-width: 1px;
-      border-color: black;
-      color: black;
-    }
-
-    #publicar-idea{
-      background-color: rgb(51, 56, 129);
+      border-color: white;
       color: white;
     }
+  
+    .publicar-button{
+      display: flex;
+      justify-content: center;
+      font-size: 15px;
+      width: 200px;
+      padding: 10px 15px;
+      border-radius: 30px;
+      text-decoration: None;
+      margin: 7px;
+      font-weight: bold;
+      color: white;
+      border-style: solid;
+      border-width: 1px;
+      border-color: white;
+      color: rgb(51, 56, 129);
+    }
+  
+    .post-body{
+      height: 100px;
+    }
   }
-}
-
-
-.new-post-button-container{
-  width: 61%;
-  margin: 8px 0;
-}
-
-
-#react-index{
-  min-width: 61%;
-  max-width: 61%;
-  width: 61%;
+  
+  .new-post-button-container{
+    width: 61%;
+    margin: 8px 0;
+  }
+  
+  
+  #react-index{
+    min-width: 61%;
+    max-width: 61%;
+    width: 61%;
+    select{
+      width: 100%;
+      option{
+        padding: 10px;
+      }
+    }
+  }
+  
   select{
-    width: 100%;
-    option{
-      padding: 10px;
-    }
+    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border:1px solid #BEBEBE;
+  padding: 7px;
+  margin:0px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
   }
-}
-
-select{
-  box-sizing: border-box;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-border:1px solid #BEBEBE;
-padding: 7px;
-margin:0px;
--webkit-transition: all 0.30s ease-in-out;
--moz-transition: all 0.30s ease-in-out;
--ms-transition: all 0.30s ease-in-out;
--o-transition: all 0.30s ease-in-out;
-outline: none;
-}
-
-.inner-posts-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.content-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.post-container{
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(255, 255, 255);
-  margin: 18px 0;
-  border-radius: 20px;
-  font-size: 18px;
-
-  .type-part-container{
+  
+  .inner-posts-container{
     display: flex;
-    justify-content: center;
-    background-color: rgb(51, 56, 129);
-    color: white;
-    border-radius: 20px 20px 0 0;
-
-    h4{
-      margin: 10px;
-    }
+    flex-direction: column;
+    align-items: center;
   }
-
-  .lower-part-container{
+  
+  
+  .content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .post-container{
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
-    padding: 20px 20px 0px 20px;
     margin: 18px 0;
-    border-radius: 10px;
-
-    .areas-container{
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
+    border-radius: 20px;
+    font-size: 18px;
   
-      .area-header{
-        margin: 8px 8px 8px 12px;
+    .type-part-container{
+      display: flex;
+      justify-content: center;
+      background-color: rgb(51, 56, 129);
+      color: white;
+      border-radius: 20px 20px 0 0;
+  
+      h4{
+        margin: 10px;
       }
-
-      p{
+    }
+  
+    .lower-part-container{
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(255, 255, 255);
+      padding: 20px 20px 0px 20px;
+      margin: 18px 0;
+      border-radius: 10px;
+  
+      .areas-container{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        .area-header{
+          margin: 8px 8px 8px 12px;
+        }
+  
+        p{
+          margin: 0 5px;
+          padding: 2px 4px;
+          border-radius: 5px;
+        }
+    
+        .area-Economía-Fomento-y-Turismo {
+          background-color: #f2f473;
+        }
+  
+        .area-Salud {
+          background-color: #f9be57;
+        }
+  
+        .area-Mujer-y-la-Equidad-de-Género {
+          background-color: #81c7e2;
+        }
+  
+        .area-Hacienda {
+          background-color: #f7bbc8;
+        }
+  
+        .area-Desarrollo-Social-y-Familia {
+          background-color: #7aff83;
+        }
+  
+        .area-Trabajo-y-Previsión-Social {
+          background-color: #ea98ae;
+  
+        }
+  
+        .area-Vivienda-y-Urbanismo {
+          background-color: #88ed53;
+        }
+  
+        .area-Transportes-y-Telecomunicaciones {
+          background-color: #c9f957;
+        }
+  
+        .area-Defensa-Nacional {
+          background-color: #cc9ff9;
+        }
+  
+        .area-Educación {
+          background-color: #a2ed8e;
+        }
+  
+        .area-Obras-Públicas {
+          background-color: #22e54f;
+        }
+  
+        .area-Ciencia-Tecnología-Conocimiento-e-Innovación {
+          background-color: #f9eab1;
+        }
+  
+        .area-Interior-y-Seguridad-Pública {
+          background-color: #6bf46d;
+        }
+  
+        .area-Secretaría-General-de-Gobierno {
+          background-color: #edb9f7;
+        }
+  
+        .area-Justicia-y-Derechos-Humanos {
+          background-color: #65edc2;
+        }
+  
+        .area-Minería {
+          background-color: #e5d864;
+        }
+  
+        .area-Energía {
+          background-color: #dd9e52;
+        }
+  
+        .area-Relaciones-Exteriores {
+          background-color: #adffce;
+        }
+  
+        .area-Medio-Ambiente {
+          background-color: #39d390;
+        }
+  
+        .area-Culturas-las-Artes-y-el-Patrimonio {
+          background-color: #a0e82e;
+        }
+  
+        .area-Secretaría-General-de-la-Presidencia {
+          background-color: #b2e0f4
+        }
+  
+        .area-Agricultura {
+          background-color: #f9b3a9;
+        }
+  
+        .area-Bienes-Nacionales {
+          background-color: #f1f7a3;
+        }
+  
+        .area-Deporte {
+          background-color: #7af99c;
+        }
+    }
+  
+    .id{
+      margin: 0 10 0 0px;
+      align-self: center;
+  
+    }
+  
+  
+  }
+    .body-container{
+      display: flex;
+      flex-direction: column;
+  
+      .propuesta-header{
+        margin: 8px 8px 0 12px;
+      }
+  
+      .body{
+        //font-style: italic;
+        hyphens: auto;
+        text-align: justify;
         margin: 0 5px;
-        padding: 2px 4px;
+        padding: 10px 25px;
         border-radius: 5px;
       }
   
-      .area-Economía-Fomento-y-Turismo {
-        background-color: #f2f473;
-      }
-
-      .area-Salud {
-        background-color: #f9be57;
-      }
-
-      .area-Mujer-y-la-Equidad-de-Género {
-        background-color: #81c7e2;
-      }
-
-      .area-Hacienda {
-        background-color: #f7bbc8;
-      }
-
-      .area-Desarrollo-Social-y-Familia {
-        background-color: #7aff83;
-      }
-
-      .area-Trabajo-y-Previsión-Social {
-        background-color: #ea98ae;
-
-      }
-
-      .area-Vivienda-y-Urbanismo {
-        background-color: #88ed53;
-      }
-
-      .area-Transportes-y-Telecomunicaciones {
-        background-color: #c9f957;
-      }
-
-      .area-Defensa-Nacional {
-        background-color: #cc9ff9;
-      }
-
-      .area-Educación {
-        background-color: #a2ed8e;
-      }
-
-      .area-Obras-Públicas {
-        background-color: #22e54f;
-      }
-
-      .area-Ciencia-Tecnología-Conocimiento-e-Innovación {
-        background-color: #f9eab1;
-      }
-
-      .area-Interior-y-Seguridad-Pública {
-        background-color: #6bf46d;
-      }
-
-      .area-Secretaría-General-de-Gobierno {
-        background-color: #edb9f7;
-      }
-
-      .area-Justicia-y-Derechos-Humanos {
-        background-color: #65edc2;
-      }
-
-      .area-Minería {
-        background-color: #e5d864;
-      }
-
-      .area-Energía {
-        background-color: #dd9e52;
-      }
-
-      .area-Relaciones-Exteriores {
-        background-color: #adffce;
-      }
-
-      .area-Medio-Ambiente {
-        background-color: #39d390;
-      }
-
-      .area-Culturas-las-Artes-y-el-Patrimonio {
-        background-color: #a0e82e;
-      }
-
-      .area-Secretaría-General-de-la-Presidencia {
-        background-color: #b2e0f4
-      }
-
-      .area-Agricultura {
-        background-color: #f9b3a9;
-      }
-
-      .area-Bienes-Nacionales {
-        background-color: #f1f7a3;
-      }
-
-      .area-Deporte {
-        background-color: #7af99c;
-      }
-  }
-
-  .id{
-    margin: 0 10 0 0px;
-    align-self: center;
-
-  }
-
-
-}
-  .body-container{
-    display: flex;
-    flex-direction: column;
-
-    .propuesta-header{
-      margin: 8px 8px 0 12px;
+  
     }
-
-    .body{
-      //font-style: italic;
-      hyphens: auto;
-      text-align: justify;
-      margin: 0 5px;
-      padding: 10px 25px;
-      border-radius: 5px;
-    }
-
-
+  
   }
-
-}
-
-
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
+  
 }
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
+  .navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    height: 100px;
+
+  
+    .navbar-logo {
+      height: 40%;
+      width: auto;
+      
+      img {
+        max-height: 100%;
+        width: auto;
+      }
+    }
+  
+    ul{
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      padding: 0 40px 0 0;
+  
+      .navbar-button{
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        width: 130px;
+        padding: 5px;
+        border-radius: 30px;
+        text-decoration: None;
+        margin: 2px 20px;
+        font-weight: bold;
+  
+      }
+  
+      #ver-ideas{
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        color: black;
+      }
+  
+      #publicar-idea{
+        background-color: rgb(51, 56, 129);
+        color: white;
+      }
+    }
+  }
+
+  .form-page-container{
+    background-color: rgb(51, 56, 129);
+    padding: 50px;
+    margin: 20px;
+    width: 70%;
+    border-radius: 20px;
+    color: white;
+  
+    select, textarea {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  
+    .form-button{
+      display: flex;
+      justify-content: center;
+      font-size: 15px;
+      width: 200px;
+      padding: 10px 15px;
+      border-radius: 30px;
+      text-decoration: None;
+      margin: 7px;
+      font-weight: bold;
+      color: white;
+      border-style: solid;
+      border-width: 1px;
+      border-color: white;
+      color: white;
+    }
+  
+    .publicar-button{
+      display: flex;
+      justify-content: center;
+      font-size: 15px;
+      width: 200px;
+      padding: 10px 15px;
+      border-radius: 30px;
+      text-decoration: None;
+      margin: 7px;
+      font-weight: bold;
+      color: white;
+      border-style: solid;
+      border-width: 1px;
+      border-color: white;
+      color: rgb(51, 56, 129);
+    }
+  
+    .post-body{
+      height: 100px;
+    }
+  }
+  
+  .new-post-button-container{
+    width: 61%;
+    margin: 8px 0;
+  }
+  
+  
+  #react-index{
+    min-width: 90%;
+    max-width: 90%;
+    width: 90%;
+    select{
+      width: 100%;
+      option{
+        padding: 10px;
+      }
+    }
+  }
+  
+  select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+  }
+  
+  .inner-posts-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .post-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    margin: 18px 0;
+    border-radius: 20px;
+    font-size: 14px;
+  
+    .type-part-container{
+      display: flex;
+      justify-content: center;
+      background-color: rgb(51, 56, 129);
+      color: white;
+      border-radius: 20px 20px 0 0;
+  
+      h4{
+        margin: 15px;
+      }
+    }
+  
+    .lower-part-container{
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(255, 255, 255);
+      padding: 20px 20px 0px 20px;
+      margin: 18px 0;
+      border-radius: 10px;
+  
+      .areas-container{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        .area-header{
+          margin: 8px 8px 8px 12px;
+        }
+  
+        p{
+          margin: 0 5px;
+          padding: 2px 2px;
+          border-radius: 5px;
+        }
+    
+        .area-Economía-Fomento-y-Turismo {
+          background-color: #f2f473;
+        }
+  
+        .area-Salud {
+          background-color: #f9be57;
+        }
+  
+        .area-Mujer-y-la-Equidad-de-Género {
+          background-color: #81c7e2;
+        }
+  
+        .area-Hacienda {
+          background-color: #f7bbc8;
+        }
+  
+        .area-Desarrollo-Social-y-Familia {
+          background-color: #7aff83;
+        }
+  
+        .area-Trabajo-y-Previsión-Social {
+          background-color: #ea98ae;
+  
+        }
+  
+        .area-Vivienda-y-Urbanismo {
+          background-color: #88ed53;
+        }
+  
+        .area-Transportes-y-Telecomunicaciones {
+          background-color: #c9f957;
+        }
+  
+        .area-Defensa-Nacional {
+          background-color: #cc9ff9;
+        }
+  
+        .area-Educación {
+          background-color: #a2ed8e;
+        }
+  
+        .area-Obras-Públicas {
+          background-color: #22e54f;
+        }
+  
+        .area-Ciencia-Tecnología-Conocimiento-e-Innovación {
+          background-color: #f9eab1;
+        }
+  
+        .area-Interior-y-Seguridad-Pública {
+          background-color: #6bf46d;
+        }
+  
+        .area-Secretaría-General-de-Gobierno {
+          background-color: #edb9f7;
+        }
+  
+        .area-Justicia-y-Derechos-Humanos {
+          background-color: #65edc2;
+        }
+  
+        .area-Minería {
+          background-color: #e5d864;
+        }
+  
+        .area-Energía {
+          background-color: #dd9e52;
+        }
+  
+        .area-Relaciones-Exteriores {
+          background-color: #adffce;
+        }
+  
+        .area-Medio-Ambiente {
+          background-color: #39d390;
+        }
+  
+        .area-Culturas-las-Artes-y-el-Patrimonio {
+          background-color: #a0e82e;
+        }
+  
+        .area-Secretaría-General-de-la-Presidencia {
+          background-color: #b2e0f4
+        }
+  
+        .area-Agricultura {
+          background-color: #f9b3a9;
+        }
+  
+        .area-Bienes-Nacionales {
+          background-color: #f1f7a3;
+        }
+  
+        .area-Deporte {
+          background-color: #7af99c;
+        }
+    }
+  
+    .id{
+      margin: 0 10 0 0px;
+      align-self: center;
+  
+    }
+  
+  
+  }
+    .body-container{
+      display: flex;
+      flex-direction: column;
+  
+      .propuesta-header{
+        margin: 8px 4px 0 12px;
+      }
+  
+      .body{
+        //font-style: italic;
+        hyphens: auto;
+        text-align: justify;
+        margin: 0px;
+        padding: 10px 15px;
+        border-radius: 5px;
+      }
+  
+  
+    }
+  
+  }
+  
 }
