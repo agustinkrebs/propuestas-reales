@@ -1,0 +1,3 @@
+export DB_NAME=propuestas_reales
+export DB_USER=joaquin
+export DB_PASSWORD=jehp3597
