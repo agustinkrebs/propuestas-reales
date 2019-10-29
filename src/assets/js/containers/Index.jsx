@@ -54,7 +54,7 @@ export default class PostList extends Component {
         <h3>Filtra las propuestas:</h3>
         <div className="filter-type-container">
           <select id="content" name="type" onChange={this.typeFilter}>
-            <option value="" disabled selected>Elije un tipo:</option>
+            <option value="-">Todos los tipos:</option>
             <option value="Reforma/cambio a un Proyecto de Ley">Reforma/cambio a un Proyecto de Ley</option>
             <option value="Proyecto ciudadano">Proyecto ciudadano</option>
             <option value="Proyecto dirigido a empresas">Proyecto dirigido a empresas</option>
@@ -62,8 +62,7 @@ export default class PostList extends Component {
         </div>
         <div className="ministries-container">
           <select id="content" name="ministry" onChange={this.ministryFilter}>
-            <option value="" disabled selected>Elije un área:</option>
-            <option value="-">- Categoria -</option>
+            <option value="-">Todas las áreas:</option>
             {ministryOptions}
           </select>
         </div>
