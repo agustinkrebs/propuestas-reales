@@ -1,4 +1,4 @@
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcrypt');
 const PASSWORD_SALT = 10;
 
 module.exports = {
