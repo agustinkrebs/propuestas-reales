@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 
 function ListItem(props) {
   const post = props.value;
-  const showMinistries = post.ministries.map((m) => <p className={"area-" + m.replace(/\ /g, "-").replace(/\,/g, "")}>{m}</p>);
+  let name = '';
+  if (!post.privacy){
+    if (post.instagram != 'nan') { name = 'Instagram: ' + post.instagram }
+    else if (post.email != 'nan') { name = 'Email: ' + post.email } 
+  };
+  const showMinistries = post.ministries.map((m) => <p key={post.id + '' + m} className={"area-" + m.replace(/\ /g, "-").replace(/\,/g, "")}>{m}</p>);
   return (
     <div className="post-container">
       <div className="type-part-container">
@@ -19,7 +24,8 @@ function ListItem(props) {
             "{post.body}"
           </p>
         </div>
-        <p class="id"># {post.id}</p>
+        <p className="id"># {post.id}</p>
+        <p className="body"> {name}</p>
       </div>
     </div>
   ); 
@@ -36,6 +42,6 @@ export default class PostListComponent extends Component {
       return (<p>No hay propuestas</p>);
     }
     const postsUl = posts.map((p) => <ListItem key={p.id} value={p} />);
-    return (<div class="inner-posts-container">{postsUl}</div>);
+    return (<div className="inner-posts-container">{postsUl}</div>);
   }
 }

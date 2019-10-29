@@ -4,9 +4,7 @@ import PostListComponent from '../components/Index';
 
 function postObject(posts) {
   const rPosts = posts.reverse();
-  console.log(rPosts[0]);
   const objectList = rPosts.map((p) => JSON.parse(p));
-  console.log(rPosts[0]);
   return objectList;
 }
 
@@ -48,7 +46,7 @@ export default class PostList extends Component {
   }
 
   render() {
-    const ministryOptions = this.state.ministries.map((m) => <option value={m.ministry}>{m.ministry}</option>);
+    const ministryOptions = this.state.ministries.map((m) => <option key={m.ministry} value={m.ministry}>{m.ministry}</option>);
     return (
       <div className="react-index-container">
         <h3>Filtra las propuestas:</h3>
