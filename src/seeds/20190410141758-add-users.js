@@ -1,19 +1,34 @@
+const bcrypt = require('bcrypt')
+const PASSWORD_SALT = 10;
+
 module.exports = {
   up(queryInterface) {
   const usersData = [
     {
       mail: 'vjlira@uc.cl',
-      password: '$2b$10$8h8FH14qQkC8HwEkR.qjdeypBQpBxhOv9iU3gVBe9W0MkiYLSK1FC',
+      password: bcrypt.hashSync("vicho?10", PASSWORD_SALT),
       createdAt: new Date(),
       updatedAt: new Date(),
 
     },
     {
-      password: '$2b$10$gdqMLMNGXz8Rks.9gR0JW.mU1/ICHo3eMM5fHFN8msPrXcBdFttSi',
+      password: bcrypt.hashSync("jehp3597", PASSWORD_SALT),
       mail: 'jeichholz@uc.cl',
       createdAt: new Date(),
       updatedAt: new Date(),
 
+    },
+    {
+      password: bcrypt.hashSync("alfvegano", PASSWORD_SALT),
+      mail: 'amora2@uc.cl',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      password: bcrypt.hashSync("lennon", PASSWORD_SALT),
+      mail: 'akrebs2@uc.cl',
+      createdAt: new Date(),
+      updatedAt: new Date(),
     },
   ];
 
