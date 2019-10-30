@@ -111,7 +111,10 @@ export default class Form extends Component {
   render() {
     const redirectToPosts = this.state.bye;
     if (redirectToPosts === true) {
-      return <h2>¡Gracias por tu propuesta!</h2>;
+      return (
+      <div>
+        <h2>¡Gracias por enviar esta propuesta!</h2>
+      </div>);
     }
 
     if (!this.state.privacy) {

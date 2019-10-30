@@ -13,6 +13,35 @@ html, body {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
 
+  .page-footer{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-style: normal;
+  
+    .instagram-footer-container{
+      margin: 10px;
+      display: flex;
+      align-items: center;
+      .ig-logo{
+        margin: 0 10px;
+        max-width: 30px;
+        height: 30px;
+      }
+    }
+  
+    .email-footer-container{
+      margin: 10px;
+      display: flex;
+      align-items: center;
+      .email-logo{
+        margin: 0 10px;
+        max-width: 30px;
+        height: 22px;
+      }
+    }
+  }
+
   .navbar {
     background-color: white;
     display: flex;
@@ -334,6 +363,36 @@ html, body {
 
 /* Mobile Styles */
 @media only screen and (max-width: 500px) {
+
+  .page-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 12px;
+    font-weight: 700;
+    font-style: normal;
+    margin: 10px 0;
+  
+    .instagram-footer-container{
+      display: flex;
+      align-items: center;
+      .ig-logo{
+        margin: 0 10px;
+        max-width: 30px;
+        height: 30px;
+      }
+    }
+  
+    .email-footer-container{
+      display: flex;
+      align-items: center;
+      .email-logo{
+        margin: 0 10px;
+        max-width: 30px;
+        height: 22px;
+      }
+    }
+  }
+
   .navbar {
     background-color: white;
     display: flex;
