@@ -2,7 +2,6 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-
     
     const postData = [
       {
