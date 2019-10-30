@@ -30,6 +30,60 @@ module.exports = {
       createdAt: new Date(),
       updatedAt: new Date(),
     },
+
+    {
+      password: bcrypt.hashSync("alfvegano", PASSWORD_SALT),
+      mail: 'alfonso@uc.cl',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+
+    {
+      password: bcrypt.hashSync("alfvegano", PASSWORD_SALT),
+      mail: 'felipe@uc.cl',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+
+    {
+      password: bcrypt.hashSync("alfvegano", PASSWORD_SALT),
+      mail: 'julio@uc.cl',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+
+    {
+      password: bcrypt.hashSync("alfvegano", PASSWORD_SALT),
+      mail: 'martin@uc.cl',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      password: bcrypt.hashSync("alfvegano", PASSWORD_SALT),
+      mail: 'josepedro@uc.cl',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      password: bcrypt.hashSync("alfvegano", PASSWORD_SALT),
+      mail: 'sebastiandelorenzo@uc.cl',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      password: bcrypt.hashSync("alfvegano", PASSWORD_SALT),
+      mail: 'sebastianmorales@uc.cl',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      password: bcrypt.hashSync("alfvegano", PASSWORD_SALT),
+      mail: 'vicente@uc.cl',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+
+
   ];
 
   return queryInterface.bulkInsert('users', usersData);
