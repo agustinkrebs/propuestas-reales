@@ -2395,10 +2395,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Hola',
       rating: 0,
       createdAt: new Date(),
@@ -2407,10 +2407,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bacan',
       rating: 0,
       createdAt: new Date(),
@@ -2419,10 +2419,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajar sueldos de políticos',
       rating: 0,
       createdAt: new Date(),
@@ -2431,10 +2431,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Mejoras educación y salud',
       rating: 0,
       createdAt: new Date(),
@@ -2443,10 +2443,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Aumento del impuesto a la riqueza',
       rating: 0,
       createdAt: new Date(),
@@ -2455,10 +2455,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'NINGUNA. La desigualdad no es mala. Enfoquemonos en reducir la pobreza y aumentar la movilidad social.',
       rating: 0,
       createdAt: new Date(),
@@ -2467,10 +2467,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'ASAMBLEA CONSTITUYENTE',
       rating: 0,
       createdAt: new Date(),
@@ -2479,10 +2479,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Si no van a mejorar el sueldo mínimo. Que para quienes ganen sueldo mínimo no paguen el metro. Nosotros podemos pagarlo...     Mayor transparencia en el uso de dinero ',
       rating: 0,
       createdAt: new Date(),
@@ -2491,10 +2491,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Mayor impuesto a las personas naturales.  Que el que más tenga, más dé de lo ganado.  Para así poder subir el sueldo mínimo.',
       rating: 0,
       createdAt: new Date(),
@@ -2503,10 +2503,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Todo participante de algún ministerio del gobierno, debe participar del ámbito público de este ministerio. Al igual que senadores y diputados en su totalidad.    Es así, trabajadores del ministerio de educación llevar a sus hijos a colegios públicos. Trabajadores del ministerio de salud atenderse en hospitales públicos. Y así en adelante.    Aseguro que a los dos segundos que el ministro de transporte utilice diariamente las facilidades del metro y transantiago estarán funcionando al 100% en su máximo explendor.    Debería ser lo mínimo para poder participar de la pólitica de nuestro país.',
       rating: 0,
       createdAt: new Date(),
@@ -2515,10 +2515,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Disminuir en un 20% aproximadamente el sueldo de los parlamentarios, el dinero ahorrado con esta medida podría y debería ser usado para subsidiar en su totalidad el pasaje de metro para la tercera edad.',
       rating: 0,
       createdAt: new Date(),
@@ -2527,10 +2527,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Cambiar el sistema de privado de pensiones por uno mixto. NO incrementar el % de pensión recibido por persona, sino hacer un cambio institucional parecido a lo que hay en el Reino Unido. ',
       rating: 0,
       createdAt: new Date(),
@@ -2539,10 +2539,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'No es algo tan directo pero potenciando el rol publico desde las aulas de clases (en especial en la universidad) para potenciar a profesionales que tomen en consideración no solo sus propios intereses. ',
       rating: 0,
       createdAt: new Date(),
@@ -2551,10 +2551,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajar sueldo a los parlamentarios para que los chilenos no sientan que “los ricos” les están robando',
       rating: 0,
       createdAt: new Date(),
@@ -2563,10 +2563,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Priorizar eduacion inicial con los recursos que tenemos en vez de educación superior',
       rating: 0,
       createdAt: new Date(),
@@ -2575,10 +2575,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Alza en salario mínimo ',
       rating: 0,
       createdAt: new Date(),
@@ -2587,10 +2587,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'TRANSPARENCIA TOTAL',
       rating: 0,
       createdAt: new Date(),
@@ -2599,10 +2599,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Estudiar la factibilidad de subir las pensiones al sueldo mínimo, Subsidios de arriendo, subsidios a necesidades básicas (agua, luz, pañales). Principalmente, un desarrollo de la colaboración interdisciplinaria a la hora de pensar políticas públicas, considerar todos los ámbitos que se ven afectados.',
       rating: 0,
       createdAt: new Date(),
@@ -2611,10 +2611,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Creo que la base está en mejorar la educación, al final es la herramienta para poder surgir',
       rating: 0,
       createdAt: new Date(),
@@ -2623,10 +2623,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Reforma Educacional',
       rating: 0,
       createdAt: new Date(),
@@ -2635,10 +2635,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajarle el sueldo a los parlamentarios y senadores, de manera de promover cargos que sean únicamente por vocación. ',
       rating: 0,
       createdAt: new Date(),
@@ -2647,10 +2647,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Que los parlamentarios se bajen los sueldos, no + afp',
       rating: 0,
       createdAt: new Date(),
@@ -2659,10 +2659,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Igualdad de oportunidades para todxs',
       rating: 0,
       createdAt: new Date(),
@@ -2671,10 +2671,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajar los sueldos de parlamentarios',
       rating: 0,
       createdAt: new Date(),
@@ -2683,10 +2683,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Mejorar Educación',
       rating: 0,
       createdAt: new Date(),
@@ -2695,10 +2695,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Es necesario escuchar a las personas de abajo. Uno de las medidas que pondría es poner un sistema de pensiones igual al sistema de capradena.... para que las personas mayores puedan tener pensiones iguales a los militares y carabineros.   Otro descontento que hay en la gente, es el problema del IVA y los impuestos. Si todos pagaran sus impuestos, desde las multinacionales, las empresas, los multimillonarios, etc. De vddd que se podrían hacer muchas cosas.  Hay otro grave problema que sucede en muchas poblaciones, el narcotráfico. Muchos de los problemas con carabineros es porque existe un descontento en los barrios bajos, como yo que vivo en Bajos de Mena, de vddd que los carabineros no se mueven para nada cuando es necesario, por robos, por la misma corrupción en la institución. Una de las medidas que pondría allí es que se trabaje comúnmente con carabineros, para poder hacer allanamientos mejores, sin perder la seguridad de las personas, porque si se llega a saber, los narcos te balean la casa.  Otra situación problemática es el sueldo mínimo y los costos de vida. De vddd no se pueden seguir subiendo los costos de vida, los servicios básicos, como luz, agua, gas, etc. Si todos pagasen sus impuestos, sin perdonazos ni nada,se podría generar subsidios mejores para la gente de clase media y pobres, personas que realmente se les va un porcentaje de su sueldo para pagar esto.  La salud pública es otro tema necesario de ver. Acá debería mover más dinero en la salud publica, más camillas, mejores sueldos a los trabajadores que trabajan tiempo completo en el hospital y un porcentaje de pago para los que hacen horas. Mejores condiciones de trabajo para los mismos médicos y enfermeras, ampliaciones de salas de urgencias y mejoras en las salas de espera. Por ejemplo, las salas de espera de CDT de Hospital Sotero del Río están asquerosas. De vddd es triste pensar que hay clínicas en las condes que son hermosas y a pesar de la poca espera tienen mucho que dar, mientras personas que esperamos 8 a 10 horas por una atención que está agendado. Otro problema que he presenciado en los hospitales públicos es el problema en la organización de horas, aquí que podríamos hacer, un sistema para toda la gente de los n hospitales públicos y un manejo mejor de directorio, para que pueda funcionar mejor la gestión de horas. A que voy con esto. Por ejemplo mi mamá tiene problemas oftalmólogicos. Ella necesita láser y nos dan horas para solo los días viernes. Lamentablemente los días viernes son días de cirugías para el pabellón de oftalmología y nos citan a las 8. Esperamos hasta 6 horas esperando atención ya que los médicos operan a esa hora.  Mejorar la educación pública u subvencionada. De vddd es necesario generar un subsidio y mejorar el que está porque muchos de los reclamos de los administradores es que no hay plata para nada. Otra cosa, hay que hacer un plan regulador de los administradores escolares por si están realizando fraudes, porque muchas veces dicen no tener dinero para entregar a los colegios y proyectos de alumnos.   Otra situación que hay que arreglar para los universitarios, es la necesidades de extender la gratuidad para la gente más pobre. No puede ser tan inhumanos de pensar que todos van a terminar la carrera al tiempo oficial, cuando los promedios de egresos son mayores de la extensión oficial siempre. Creen que somos unos flojos, pero no ven los problemas que tienen las personas de bajos recursos, desde problemas económicos, sociales, médicos, etc.  El último ley que haría es la necesidad de quitar el tema de los pitutos para entrar a trabajos importantes. Eso es un grave problema de desigualdad en Chile. Legislaria pars castigar el pituto en las empresas',
       rating: 0,
       createdAt: new Date(),
@@ -2707,10 +2707,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'impuestos a los mas ricos',
       rating: 0,
       createdAt: new Date(),
@@ -2719,10 +2719,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Crear un sistema mejor de cobros en el sistema público. Estamos los estudiantes y adultos mayores con tarifa preferencial. Ver alguna forma para que se incluya en este sistema la gente que recibe sueldo mínimo u otras personas que puedan necesitar ayuda. ',
       rating: 0,
       createdAt: new Date(),
@@ -2731,10 +2731,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajar sueldos a parlamentarios, mano dura a casos de colusiones y fraudes',
       rating: 0,
       createdAt: new Date(),
@@ -2743,10 +2743,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Que disminuya la cantidad de parlamentarios, puede ser de a poco, 2 por año, para que no sea un cambio tan brusco pero con la plata de sus sueldos se pueden mejorar luchas cosas públicas. Miren italia por ejemplo, logro disminuir una gran parte de sus parlamentarios, no es imposible.',
       rating: 0,
       createdAt: new Date(),
@@ -2755,10 +2755,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Eliminar los privilegios frente a temas judiciales. Que todos sean juzgados bajo la misma vara, y cumplan penas correctas. Sin importar el origen y apellido de la persona. No pueden burlarse así de los chilenos, crea mucha injusticia y resentimiento. ',
       rating: 0,
       createdAt: new Date(),
@@ -2767,10 +2767,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Igualar la educación, es la base. Es la principal causa y consecuencia de la gran brecha y desigualdad en Chile. Al comparar con EEUU donde la educación pública es igual de calidad con la privada.',
       rating: 0,
       createdAt: new Date(),
@@ -2779,10 +2779,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Ley de reforma a las AFP',
       rating: 0,
       createdAt: new Date(),
@@ -2791,10 +2791,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Que la Contraloria tenga TOLERANCIA CERO con las condonaciones del SII a las evasiones de impuestos ',
       rating: 0,
       createdAt: new Date(),
@@ -2803,10 +2803,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Alza en el sueldo mínimo ',
       rating: 0,
       createdAt: new Date(),
@@ -2815,10 +2815,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Subir los puntajes para poder ser profesor',
       rating: 0,
       createdAt: new Date(),
@@ -2827,10 +2827,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Los sueldos de empleados del estado',
       rating: 0,
       createdAt: new Date(),
@@ -2839,10 +2839,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Primero el país tiene que destinar sus gastos a la reconstrucción y posteriormente crear más trabajos a través de la baja de impuestos para así fomentar la inversión y crecer económicamente con la inversión. Si el país crece económicamente podemos emparejar la cancha hacia arriba.',
       rating: 0,
       createdAt: new Date(),
@@ -2851,10 +2851,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Disminuir la dieta parlamentaria. Incentivar a inversionistas y emprendedores a través del reajuste tributario.  ',
       rating: 0,
       createdAt: new Date(),
@@ -2863,10 +2863,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Asamblea Constitucional',
       rating: 0,
       createdAt: new Date(),
@@ -2875,10 +2875,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Reforma constitucional y darle prioridad a la Nueva Educación Pública, luego creo firmemente en la integración social a través de generar ciudades más integradas y menos segregadas, mezclemosnos!!!!! ',
       rating: 0,
       createdAt: new Date(),
@@ -2887,10 +2887,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'reducir los impuestos, desprivatizar el agua',
       rating: 0,
       createdAt: new Date(),
@@ -2899,10 +2899,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Presupuesto base 0. Replantearse la distribucion de recursos del estado propuesto por el actual gobierno para, al menos, lograr la estabilidas social en el corro plazo. Con el objetivo de ubicar recursos en items de mayor urgencia social. ',
       rating: 0,
       createdAt: new Date(),
@@ -2911,10 +2911,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Los politicos manejan la cosa segun su conveniencia. No inventé esta medida, pero si los politicos estuviesen obligados por ley a atenderse en la salud publica y a educar sus hijos con educacion publica, estoy seguro que empezarian a hacer su trabajo',
       rating: 0,
       createdAt: new Date(),
@@ -2923,10 +2923,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Hacer que todos los presidentes anteriores saquen a la luz pública en donde, a quien ( empresas, etc) y en que momento, vendieron parte de Chile, ya sea luz, agua, mar, recursos, etc.  Vamos a arreglar Chile desde sus raíces. ',
       rating: 0,
       createdAt: new Date(),
@@ -2935,10 +2935,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Reforma Tributaria',
       rating: 0,
       createdAt: new Date(),
@@ -2947,10 +2947,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Ingreso basico universal',
       rating: 0,
       createdAt: new Date(),
@@ -2959,10 +2959,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Baja de Iva generalizada ',
       rating: 0,
       createdAt: new Date(),
@@ -2971,10 +2971,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajarle los sueldos a los diputados y senadores. Así las personas no se van a volver políticos por la plata sino porque verdaderamente le interesa ayudar a la gente.',
       rating: 0,
       createdAt: new Date(),
@@ -2983,10 +2983,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Disminución dieta parlamentaria, disminución numero de parlamentarios, sala cuna universal, prioridad en cesfams y hospitales ante clinicas privadas en medicamentos',
       rating: 0,
       createdAt: new Date(),
@@ -2995,10 +2995,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Enseña lo aprendido.   Gratuidad universitaria  para los q despues de estudiar enseñen su materia en una escuela (carreras matematicas->matematicas, carreras humanistas->lenguaje, historia, etc)',
       rating: 0,
       createdAt: new Date(),
@@ -3007,10 +3007,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Mas metros',
       rating: 0,
       createdAt: new Date(),
@@ -3019,10 +3019,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'La afp gana 500 millones de dolares al año (cifra estimada). Antes de hacer que ganen eso, quitarle 1/3 de la plata que hacen y repartirla entre las pensiones (con especial prioridad en las pensiones más bajas). ',
       rating: 0,
       createdAt: new Date(),
@@ -3031,10 +3031,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Educación como pilar del cambio',
       rating: 0,
       createdAt: new Date(),
@@ -3043,10 +3043,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: ' Con un grupo de prof de economía jóvenes de la uc vamos a plantear propuestas desde la academia',
       rating: 0,
       createdAt: new Date(),
@@ -3055,10 +3055,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajar la dieta parlamentaria; aumentar pensiones',
       rating: 0,
       createdAt: new Date(),
@@ -3067,10 +3067,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Hacer un proyecto de ley que respalde la salud mental en Chile. Cosas básicas como que se propongan conversaciones sobre los temas que son considerados “tabu”, que hayan psicólogos en lugares necesarios (Puente Alto, Temuco, Pucón), que hayan más centros de atención para salud mental, que hayan personas especializadas en hospitales públicos para ayudar con ciertas enfermedades (tales cómo psicólogos o psiquiatras), promover la salud mental en los colegios (que sea absolutamente necesario y vayan especializados que puedan ayudar).',
       rating: 0,
       createdAt: new Date(),
@@ -3079,10 +3079,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Reducción de IVA. A quienes mas afecta es a los mas vulnerables (el 19% del valor del un producto afecta mucho a más a una persona que tiene menos recursos que a una persona rica).    Como reducir el IVA?  Reducir sueldos de los políticos (diputados, senadores, y otros operadores políticos inútiles), modernizar el estado, digitalización completa, reducir empleos públicos (de esa manera los recursos se destinan donde realmente se necesitan).    Fomento inversión y emprendimiento a través de deducciones tributarias: permite mayor contratación por parte de empresas al disminuir costos, bajando la tasa de desempleo.    Aumento de cotización DENTRO del sistema de AFP(sistemas de reparto quebrados a lo largo de todo el planeta), con perfeccionamiento de edad de jubilación (actualmente insuficiente) y controles para evitar abusos.',
       rating: 0,
       createdAt: new Date(),
@@ -3091,10 +3091,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Acceder a un porcentaje de las ganancias de la salud privada y destinarla a la salud pública. Si un centro de salud privado genera ingresos neto mayores a &quote&X%&quote&, tanto porciento de esa ganancia deberá ir a algún centro de salud vulnerable y/o de menores ingresos.',
       rating: 0,
       createdAt: new Date(),
@@ -3103,10 +3103,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajar el sueldo de los  Parlamentarios',
       rating: 0,
       createdAt: new Date(),
@@ -3115,10 +3115,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Disminuir el numero de los senadores y diputados y bajarles el sueldo.  Ponerle fin a los beneficios de los ex presidentes de la republica. Muchas gracias ya sirvieron pero es hora de que esos fondos se destinen en OBRAS Y POLITICAS PUBLICAS, en educacion',
       rating: 0,
       createdAt: new Date(),
@@ -3127,10 +3127,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Que el sueldo máximo no sea mayor a 30 veces el sueldo mínimo en una empresa',
       rating: 0,
       createdAt: new Date(),
@@ -3139,10 +3139,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajar los salarios gubernamentales ',
       rating: 0,
       createdAt: new Date(),
@@ -3151,10 +3151,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Disminución dieta parlamentaria, aumento subsidio transporte público, aumento sueldo mínimo inmediatamente, aumento pilar solidarios, aumento impuestos con énfasis redistributivo, propuesta de nuevo pacto social (partiendo por una nueva constitución)',
       rating: 0,
       createdAt: new Date(),
@@ -3163,10 +3163,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Reforma a la salud, reforma a las AFP, bajo a la dieta de senadores, acceso a la vivienda para todos. Mejoras a la educación ',
       rating: 0,
       createdAt: new Date(),
@@ -3175,10 +3175,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Disminuir el salario de los parlamentarios ',
       rating: 0,
       createdAt: new Date(),
@@ -3187,10 +3187,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Desprivatizar los recursos naturales (solo regular) ',
       rating: 0,
       createdAt: new Date(),
@@ -3199,10 +3199,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajar los precios de los productos a un punto que sea accesible para todos, pero que aun así mantenga vigente la economía  de nuestro país.',
       rating: 0,
       createdAt: new Date(),
@@ -3211,10 +3211,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Reforma Constitucional ',
       rating: 0,
       createdAt: new Date(),
@@ -3223,10 +3223,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Establecer un impuesto progresivo según los ingresos de las personas, tal como funciona en distintos países que aseguran los derechos sociales a través de actividades del Estado.',
       rating: 0,
       createdAt: new Date(),
@@ -3235,10 +3235,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Declarar ilegal al Frente Amplio y al Partido Comunista ',
       rating: 0,
       createdAt: new Date(),
@@ -3247,10 +3247,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Eliminar y bajar los impuestos',
       rating: 0,
       createdAt: new Date(),
@@ -3259,10 +3259,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'La desigualdad no es el problema. Falta crecimiento económico. El que tiene más es porque creó algo que dió valor a la sociedad, y la sociedad quiere comprarlo. El que tiene menos debe tener lo suficiente para vivir dignamente. Por eso, se tiene que promover la innovación para crear empresas que den empleos. Así mientras más se crezca económicamente la gente va a estar dispuesta a recibir más de sueldo (costo oportunidad) y tendrán mejor calidad de vida. ',
       rating: 0,
       createdAt: new Date(),
@@ -3271,10 +3271,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajar los sueldos de los políticos, disminuir el Parlamento a uno más pequeño y con gente que realmente identifique al pueblo no sólo a los más privilegiados',
       rating: 0,
       createdAt: new Date(),
@@ -3283,10 +3283,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Creo q principalmente es necesario mejorar la educacion, educar da oportunidades a todos, para esto se deberia asegurar con 12 años de educacion gratuita y de calidad (1ro a 4to medio),  ya si El alumni require mas tiempo esto corre por cuenta de El, Los profesores deben ser de calidad, darles mejores salaries, pero someterlos a una prueba de competencias Al menos una vez cada 5 años, para asi asegurar la calidad de la misma, creo q esto es mas realista y creo q con educacion se puede salir adelante, una vez esto este cubierto avanzar hacia la educacion superior, de Paso mejor informacion sobre El finamciamiento sence, Gran iniciativa pero q la gente desconoce',
       rating: 0,
       createdAt: new Date(),
@@ -3295,10 +3295,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'De partida, NO más tolerancia e impunidad a los casos de corrupción de políticos y los robos de chaqueta y corbata. La igualdad ante la ley tiene que cumplirse al pie de la letra. Que tener recursos no te permita estar por sobre la ley.',
       rating: 0,
       createdAt: new Date(),
@@ -3307,10 +3307,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Antes que la cantidad y alcance de la educación nos deberíamos focalizar e invertir en la calidad de esta. ',
       rating: 0,
       createdAt: new Date(),
@@ -3319,10 +3319,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Aumentar la libertad de las empresas (intervencionismo estatal), de esta manera, la libre competencia entre las mismas regula los precios. Al regularse de manera propia, la gente compra más ya que es más accesible, al comprar más aumenta el capital de la empresa, invirtiendo más en sus trabajadores y creando más empleos. Mas gente sale de la pobreza, más sube la calidad de vida del país, mejor vivimos todos.   La desigualdad no debe ser combatida, lo que debe ser combatido es la calidad de vida de las personas.',
       rating: 0,
       createdAt: new Date(),
@@ -3331,10 +3331,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Aumentar la libertad de las empresas (intervencionismo estatal), de esta manera, la libre competencia entre las mismas regula los precios. Al regularse de manera propia, la gente compra más ya que es más accesible, al comprar más aumenta el capital de la empresa, invirtiendo más en sus trabajadores y creando más empleos. Mas gente sale de la pobreza, más sube la calidad de vida del país, mejor vivimos todos.   La desigualdad no debe ser combatida, lo que debe ser combatido es la calidad de vida de las personas.',
       rating: 0,
       createdAt: new Date(),
@@ -3343,10 +3343,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Darle una cara al movimiento anti- desigualdad para que pueda discutir con las autoridades ',
       rating: 0,
       createdAt: new Date(),
@@ -3355,10 +3355,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Aumentar el sueldo mínimo y si no fijar precios accesibles para necesidades básicas (remedios, confort, pan). Repartir equitativamente los ingresos del gobierno para salud y educación y si es necesario disminuir sueldos de empresarios gubernamentales.',
       rating: 0,
       createdAt: new Date(),
@@ -3367,10 +3367,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajen la dieta parlamentaria, menos diputado y senadores (son demasiados, y se ve que no funciona porque nunca están todos), que no hayan comisiones en él parlamentos (solo generan más división, pej si el jefe de comisión es udi y el proyecto es frente amplio (o viceversa) este no avanza....), adulto mayor NO pague transporte, más IVA a las empresas, menos IVA  a los feriantes, panaderos de barrio, etc. Menos colusion en farmacias, estudio una carrera de la salud y se que los remedios son mas baratos. MÁS INSUMOS pra hospitales. educación de calidad para todos. Y sobre todo, que NADIE por más pobre o rico que sea, este por sobre la ley, ante la ley todo delito debe ser castigado de la misma manera sin importar del delincuente. Hay tantas cosas por arreglar..... ',
       rating: 0,
       createdAt: new Date(),
@@ -3379,10 +3379,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajar sueldos de políticos y disminuir la cantidad de diputados para poner mas dinero en salud, educación y otros.',
       rating: 0,
       createdAt: new Date(),
@@ -3391,10 +3391,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Aumentar la plata destinada a salud, aunque sea un aumento paulatino para reducir la crisis de insumos y exámenes. ',
       rating: 0,
       createdAt: new Date(),
@@ -3403,10 +3403,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Subir el sueldo mínimo, no más afp, destinar más recursos al área de salud, crear más oportunidades de trabajo para las personas. ',
       rating: 0,
       createdAt: new Date(),
@@ -3415,10 +3415,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Cobrar un impuesto irrevocable del 1 ó 5% a los más ricos para subvencionar necesidades básicas de la población ',
       rating: 0,
       createdAt: new Date(),
@@ -3427,10 +3427,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajarle el sueldo a los políticos ',
       rating: 0,
       createdAt: new Date(),
@@ -3439,10 +3439,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: '1. Disminuir “dieta parlamentaria”   Esos recursos mal gastados pueden ser utilizados en otras cosas   2. Uniformados deben tener mismos beneficios que un ciudadano comun',
       rating: 0,
       createdAt: new Date(),
@@ -3451,10 +3451,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Ajuste sueldo mínimo, reformulación a sistema de pensiones para que no sea menor a sueldo mínimo, reformulación a tarifa de transporte público',
       rating: 0,
       createdAt: new Date(),
@@ -3463,10 +3463,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'En primera hay que dar señales de que el cambio se va a hacer',
       rating: 0,
       createdAt: new Date(),
@@ -3475,10 +3475,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Menos politicos pero de mejor calidad',
       rating: 0,
       createdAt: new Date(),
@@ -3487,10 +3487,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Creo que hablar de terminar de la desigualdad es un término muy amplio. Sin embargo, creo que cualquier ámbito de desigualdad se debe abarcar desde la educación, si le enseñamos a todos a pescar en vez de darles los pescados. ¿Cómo? Yo creo que se podría implementar una ley que iguale los sueldos de una profesora de un colegio particular pagado, que el de una profesora de un colegio municipal, de forma de subsidio o algo parecido. Si es que nos quedamos solo con eso, todos sabemos que aún la competencia no sería justa, por que existen los “pitutos”, creo que para regular esta parte, se podría implementar una ley en la que agentes externos, investigadores, y equipos de especialistas de distintos ámbitos, que no puedan verse beneficiados de ninguna forma por su elección, sean los que den el último “visto bueno” para que una persona pueda entrar a la empresa que está postulando, si bien, podría hacer más largo, bajaría considerablemente el número de pitutos.',
       rating: 0,
       createdAt: new Date(),
@@ -3499,10 +3499,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Eliminar o bajar excesivamente el sueldo pagado a ex presidentes ',
       rating: 0,
       createdAt: new Date(),
@@ -3511,10 +3511,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Asamblea constituyente ahora!',
       rating: 0,
       createdAt: new Date(),
@@ -3523,10 +3523,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: '*Acciones permanentes*  1) Eliminar el pago de contribuciones a los jubilados.  2) Tranporte público gratuito a los jubilados  3) Medicamentos gratuitos a jubilados contra receta médica para evitar que compren para otros.  4) Alargar las concesiones de autopistas para bajar el valor del tag.  5) Subir las pensiones mas bajas al valor del sueldo mínimo.  *Acciones temporales*  1) Congelar el precio de los servicios básicos hasta definir un nuevo modelo de reajuste.  Permanente:  Aumentar tope imponible para que en el futuro se tenga una mejor pensión y la persona no se transforme en carga para el estado.  Subsidiar los medicamentos a los que ganen el sueldo mínimo o menos.',
       rating: 0,
       createdAt: new Date(),
@@ -3535,10 +3535,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Potenciar mucho más el emprendimiento en Chile, disminuyendo al emprendedor los impuestos y vacíos burocráticos que complican más todo. Para así darle la misma oportunidad de triunfar en este sistema a gente de todas clases sociales.',
       rating: 0,
       createdAt: new Date(),
@@ -3547,10 +3547,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Disminución de la dieta parlamentaria',
       rating: 0,
       createdAt: new Date(),
@@ -3559,10 +3559,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Masificar el deporte y la vida sana. Educación más amplia que realmente despierte las ganas de vivir, no de sobre-vivir, de los chilenos. IIntegración entre creyentes, no creyentes, ricos, pobres, chilenos, inmigrantes,  etc.',
       rating: 0,
       createdAt: new Date(),
@@ -3571,10 +3571,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Al finalizar las carreras de ingenería civil, comercial, y cualquier otra de alto impacto social, debiesen exigir firmar un juramento, como lo hace derecho o medicina, que invalide el titulo (y se generen otros castigos) en caso de cometer actos en contra de las normas eticas básicas de la profesión. Ej: ingenieros que evadan impuestos, debiesen quedar destitulados y se les prohibe acceder al sector público. Medida chica, pero barata y tal vez de gran impacto (entendiendo lo dañino que fue el caso SOQUIMICH)',
       rating: 0,
       createdAt: new Date(),
@@ -3583,10 +3583,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Reactivación de la  Economía ',
       rating: 0,
       createdAt: new Date(),
@@ -3595,10 +3595,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Desde mi punto de vista y conociendo de economía me gustaría aclarar que la desigualdad no es el problema, no es mala la desigualdad (si todos son ricos y unos son mas ricos que otro no veo el problema) el problema es la pobreza, hay que incentivar la economía del país para crear mas puestos de trabajo y de esa forma mayor competencia laboral y mejores sueldos, entre mas impuestos se apliquen menos empresas habrán, por ende habrán menos puestos de trabajo y menos elección del trabajador para ver el trabajo que le acomode mas, el empresario (el honesto, que lo son en su mayoría solo que en nuestro país el resentimiento hace que todos lo odien y hablen peste por tener mas) es bueno para el país porque crea trabajo, el se beneficia de eso ganando dinero pero beneficia al pueblo creando puestos laborales y pagando impuestos que al fin y al cabo los impuestos de las grandes empresas son los que financian todas las políticas publicas. Si se le quitara todo el dinero a los 100 mas ricos del país, alcanzaría para solo 6 meses de presupuesto fiscal y despues de eso tendrias 100 pobres mas en el pais... hay que dejar de pelear con el de arriba para que este abajo y empezar a pensar en llegar alla arriba, sacarse el color politico de la cabeza y estudiar sobre un poco de economia.  Ademas Chile no sera un pais utopico pero esta mejor que cualquier pais de la region y eso es gracias a la libertad economica que hay (mas todavia antes de la ultima reforma de bachelet).  Por un lado alegan que el estado es una mierda y no sabe manejar el pais y despues votan por los que quieren estatizar todo en el pais, si no son capaces de manejar un gobierno menos lo van a ser de manejar el gobierno y empresas sl mismo tiempo, al fin y al cabo ellos son personas y velan por sus intereses sin importar el color politico.  ',
       rating: 0,
       createdAt: new Date(),
@@ -3607,10 +3607,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Hacer un fondo soberano con el litio, que es la próxima fuente de mayor riqueza del país. Hacerlo como Noruega, que la plata vaya a un fondo estatal y todos nos beneficiemos de su extracción (eso si habría que tener un gobierno confiable que realmente trabaje para el bien de nosotros... se presta mucho para robos y corrupción)',
       rating: 0,
       createdAt: new Date(),
@@ -3619,10 +3619,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'SII autonomo, con kpis en recaudación, auditado anual. ',
       rating: 0,
       createdAt: new Date(),
@@ -3631,10 +3631,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Transparencia de sueldos: en algunos países uno puede mirar cuánto gana cada persona. Eliminando este secretismo se podrían reducir mucho las desigualdades, cuando se exponen los sueldos La gente no es tan cara dura como para embolsarse 30 o 50 veces lo que gana el eslabón más bajo ',
       rating: 0,
       createdAt: new Date(),
@@ -3643,10 +3643,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Una ley que sancione más fuertemente a las empresas y personas que evadan impuestos y que esta millonaria multa que le cobren vaya dirigida a escuelas vulnerables para que estas puedan mejorar y tener oportunidades  Una ley de transparencia, que todas las empresas (sociedades anonimas) digan cuanto contaminan, cuanto pagan de impuestos, cuantas donaciones hacen a fundaciones',
       rating: 0,
       createdAt: new Date(),
@@ -3655,10 +3655,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'cambiar la constitución del 73, no solo modificarla',
       rating: 0,
       createdAt: new Date(),
@@ -3667,10 +3667,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajar los impuestos de las personas y subir el de las empresas ',
       rating: 0,
       createdAt: new Date(),
@@ -3679,10 +3679,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Disminucion de los sueldos de los psrlamentsrios',
       rating: 0,
       createdAt: new Date(),
@@ -3691,10 +3691,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'El estado tiene que organizar las platas. Como? Que haya transparencia en que se gastan los impuestos, soy del área de educación y se que se destina mucho dinero ahí por ejemplo y al momento de llegar a los colegios &quote&se pierde&quote& una gran cantidad. Esto es por la estructura que tienen para hacer las cosas.  Cómo hacer eso mejor?  - reducir a los funcionarios del estado, sacar a los/as que no aportan.  -poner en los cargos a gente relacionada con el tema y que sepa tratarlos, no amigos del presidente. En el ministerio de educación hay como una profe de básica y esta en párvulos. Que va a saber una profesora de básica de educación de párvulos si son etapas distintas.  - reducir la dieta parlamentaria, ganan mucho y hacen muy poco  - que ministros y cenadores comienzan a utilizar los servicios público que entregan. Así podrían hacer propuestas más coherentes. ',
       rating: 0,
       createdAt: new Date(),
@@ -3703,10 +3703,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Dieta parlamentaria , disminuir los sueldos de los parlamentarios a una equivalencia de dos sueldos  minimos asi , desarollamos  personas verdaderamente interesadas en querer partipar en la politica ,   a su vez se sube el sueldo minimo y emparejamos la desigualdad salarial de manera significativa. ',
       rating: 0,
       createdAt: new Date(),
@@ -3715,10 +3715,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Disminuir los sueldos de los parlamentarios ',
       rating: 0,
       createdAt: new Date(),
@@ -3727,10 +3727,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajar dieta parlamentaria, impuestos a clase media y subir sueldo mínimo.',
       rating: 0,
       createdAt: new Date(),
@@ -3739,10 +3739,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Creo que la educación es un tema urgente porque con una igualdad de oportunidades, se crea una base justa a partir de la que cualquiera podría desarrollar sus habilidades independiente de donde se haya nacido. Me parece muy importante porque es lo único que a largo plazo haría que nuestro sistema se vuelva más justo',
       rating: 0,
       createdAt: new Date(),
@@ -3751,10 +3751,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Considero que se necesitan diversas leyes. Primero debería haber un reajuste de los salarios, la dieta parlamentaria debería disminuir (20% ¿?), deberían incluir más enfermedades al GES y dar un presupuesto provisionario a la salud publica para que puedan finalizar el año de forma adecuada (y para años futuros aumentar el presupuesto que se les da), deberían disminuir el precio de los medicamentos (probablemente disminuyendo o quitando el IVA). Se que también hay que mejorar el tema de la AFP y la educación, pero no conozco mucho al respecto.',
       rating: 0,
       createdAt: new Date(),
@@ -3763,10 +3763,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Que se baje el sueldo a parlamentarios ',
       rating: 0,
       createdAt: new Date(),
@@ -3775,10 +3775,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajar el precio de los medicamentos, o por lo menos quitarles el IVA ',
       rating: 0,
       createdAt: new Date(),
@@ -3787,10 +3787,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Que a las mujeres les paguen lo mismo que a los hombres',
       rating: 0,
       createdAt: new Date(),
@@ -3799,10 +3799,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Armar un panel o una mesa de diálogo pública (televisada y en RRSS), con participantes diversos (políticos de todos los partidos, dirigentes estudiantiles, el presidente, miembros de la CUT, presidentes de fundaciones y otros personajes relevantes) que permita el diálogo y la generación de ideas y se fomente la cooperación entre todos para llegar a un Chile mejor y que nos represente a todos ',
       rating: 0,
       createdAt: new Date(),
@@ -3811,10 +3811,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Primero bajarle el sueldo a parlamentarios para poder tranquilizar un poco los ánimos. Luego eliminar el iva y sumplirlo con el aumento de un impuesto progresivo (real y no al peo como los que hay) a la renta. ',
       rating: 0,
       createdAt: new Date(),
@@ -3823,10 +3823,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: '- que dejen de hacer perdonazos a empresarios por evasión de impuestos.  - que exista una persona que supervise el trabajo de ministros, senadores y diputados, y que les paguen de acuerdo a su productividad marginal.  -  que existan mayor cantidad de planes de Salud, y que estén más orientados a las personas.  ',
       rating: 0,
       createdAt: new Date(),
@@ -3835,10 +3835,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Educación gratuita y de calidad ',
       rating: 0,
       createdAt: new Date(),
@@ -3847,10 +3847,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Dieta parlamentaria, reformar las afp',
       rating: 0,
       createdAt: new Date(),
@@ -3859,10 +3859,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajar la dieta parlamentaria. Condenar con cárcel la evasión de impuestos y colusión de empresarios',
       rating: 0,
       createdAt: new Date(),
@@ -3871,10 +3871,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Aumento del sueldo mínimo a 500.000',
       rating: 0,
       createdAt: new Date(),
@@ -3883,10 +3883,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Eliminar el sistema neoliberal😍😍😍👌🏻👌🏻👌🏻 Todos tendremos pension de un palo y educacion y salud gratis y de calidad',
       rating: 0,
       createdAt: new Date(),
@@ -3895,10 +3895,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Aumentar el sueldo mínimo y bajarle el sueldo a los congresistas/presidentes/ministros y otros que se suben el sueldo cuando en verdad brillan por su ausencia. Y clases de ética a todos esos *** :). Mejor educación. Mejor sistema para cuidar a los niños, que son el futuro de chile ',
       rating: 0,
       createdAt: new Date(),
@@ -3907,10 +3907,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Subir el salario mínimo ',
       rating: 0,
       createdAt: new Date(),
@@ -3919,10 +3919,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'La existencia de un sueldo justo',
       rating: 0,
       createdAt: new Date(),
@@ -3931,10 +3931,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: '- bajar los salarios de los senadores y diputados  - disminuir en gran medida el precio del transporte público   - eliminar el AFP, hacer un nuevo plan de pensiones  ',
       rating: 0,
       createdAt: new Date(),
@@ -3943,10 +3943,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'reducción de la dieta parlamentaria en al menos el 50% del monto actual',
       rating: 0,
       createdAt: new Date(),
@@ -3955,10 +3955,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Fin a las pensiones vitalicias por cargos públicos y a miembros de las FFAA, ajustando las pensiones a un nivel justo según el contexto chileno',
       rating: 0,
       createdAt: new Date(),
@@ -3967,10 +3967,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Sanciones por abuso de las facultades de los cargos públicos (exceso en viáticos, gastos personales con dinero destinado a sus funciones)',
       rating: 0,
       createdAt: new Date(),
@@ -3979,10 +3979,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Sacar fuerzas militares en la zona de la Araucanía y proteger a las personas de la represión de las FFAA',
       rating: 0,
       createdAt: new Date(),
@@ -3991,10 +3991,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Reestructurar la Ley que describe el agua como un bien público, pero el derecho de uso de agua privado, denotando el agua y su uso como un bien público protegido sin permitir aprovechamiento de quienes tienen más poder (de compra o de manejo y control de aguas)',
       rating: 0,
       createdAt: new Date(),
@@ -4003,10 +4003,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Ley que se sume a la Ley de tenencia responsable de animales, que proteja a especies expuestas a daños y/o alteraciones por acciones de las personas, tales como, fuerza canina y policía montada en eventos de protestas y enfrentamientos, como también actividades como el rodeo',
       rating: 0,
       createdAt: new Date(),
@@ -4015,10 +4015,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'sanciones graves a las empresas que se coludan o realicen malas praxis con fin de maximizar sus utilidades con faltas de ética',
       rating: 0,
       createdAt: new Date(),
@@ -4027,10 +4027,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Asegurar un presupuesto para entregar salud de calidad y evitar largas esperas en centros de salud públicos',
       rating: 0,
       createdAt: new Date(),
@@ -4039,10 +4039,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajar impuesto IVA (19%) y asegurarse de que las empresas paguen sus impuestos correspondientes.   Bajar dieta parlamentaria.  Frenar sueldos vitalicios tanto de gobierno como de fuerzas armadas.  ',
       rating: 0,
       createdAt: new Date(),
@@ -4051,10 +4051,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Una comisión real que sancione a políticos por abusos y frases despectivas en contra del pueblo y personas chilenas que no pertenezcan a la élite del país',
       rating: 0,
       createdAt: new Date(),
@@ -4063,10 +4063,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'que exista un canal (o reformular) para la comunicación entre las exigencias de la gente a la clase política',
       rating: 0,
       createdAt: new Date(),
@@ -4075,10 +4075,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Que en vez de haber una bip que se vaya recargando, se pague mensual (como en varios paises de europa) haciendo mas barato el costo por viaje para los usuarios y tambien podria bajar la evasion.',
       rating: 0,
       createdAt: new Date(),
@@ -4087,10 +4087,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Educación de calidad, moderna y descentralizada. ',
       rating: 0,
       createdAt: new Date(),
@@ -4099,10 +4099,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Subir impuestos de las personas de forma drástica. Solucionar el tema de las afp de acá a tres meses, subiendo las cuotas de forma instantánea desde la recaudación de impuestos. Inyectar mayor presupuesto a educación pre básica y básica, proyectar un crecimiento de aquí a 20 años plazo. Endurecer leyes contra políticos y empresarios por abuso de poder y estafa (no más multas pequeñas, cárcel y retorno de todo lo robado deben ser las penas) ',
       rating: 0,
       createdAt: new Date(),
@@ -4111,10 +4111,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Que la dieta parlamentaria sea del sueldo mínimo y que el sueldo mínimo Sean 500.000 ',
       rating: 0,
       createdAt: new Date(),
@@ -4123,10 +4123,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Educación gratuita y de calidad.',
       rating: 0,
       createdAt: new Date(),
@@ -4135,10 +4135,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Toda persona y/o empresa, paguen los impuestos. ',
       rating: 0,
       createdAt: new Date(),
@@ -4147,10 +4147,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Educación de calidad, salud de calidad, un cambio simbólico es que los políticos bajen sus sueldos ',
       rating: 0,
       createdAt: new Date(),
@@ -4159,10 +4159,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Salud, educacion y pensión digna y de calidad',
       rating: 0,
       createdAt: new Date(),
@@ -4171,10 +4171,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Bajar la dieta parlamentaria y aumentar el sueldo mínimo.',
       rating: 0,
       createdAt: new Date(),
@@ -4183,10 +4183,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Pensiones más altas',
       rating: 0,
       createdAt: new Date(),
@@ -4195,10 +4195,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Mayor inversión en salud publica',
       rating: 0,
       createdAt: new Date(),
@@ -4207,10 +4207,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Presupuesto 0. Hoja en blanco.',
       rating: 0,
       createdAt: new Date(),
@@ -4219,10 +4219,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Empezando por una asamblea constituyente, no podemos seguir viviendo con una constitución escrita en dictadura    Democracia directa: en otras palabras, que los plebiscitos sean influyentes y no una mera manera de recaudar información    Cambio de gabinete: quizas esto no influye tanto en la desigualdad pero el pueblo lo pide. Fuera ministro del interior, fuera ministra de educación y fuera ministra de salud.    Disminución de la dieta parlamentaria: porque? Por el simple hecho de que sus sueldos salen del bolsillo de todos los chilenos, en otras palabras, la disminución de la dieta parlamentaria dispondría dinero para invertir en políticas publicas más eficientes.    Reforma tributaria: no se en terminos técnicos como decirlo, pero en buen chileno: que el rico pague más y el pobre pague menos.    Creo que fui lo mas concreto posible, investigare mas y volvere con mas ideas ',
       rating: 0,
       createdAt: new Date(),
@@ -4231,10 +4231,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Aumentar los impuestos a la propiedad, pero reducir los del trabajo. También que los impuestos sean locales, es decir se distribuyan dentro de tu comunidad.',
       rating: 0,
       createdAt: new Date(),
@@ -4243,10 +4243,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Los ingresos que reciben los hospitales. El presupuesto anual por lo general se acaba en septiembre, y es inaceptable que no hayan implementos básicos para atender a los pacientes. Creo que invertir y resolver este ámbito ayudaría a disminuir la brecha social. ',
       rating: 0,
       createdAt: new Date(),
@@ -4255,10 +4255,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Desprivatizacion del agua!!',
       rating: 0,
       createdAt: new Date(),
@@ -4267,10 +4267,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Desmunicipalizacion de los colegios',
       rating: 0,
       createdAt: new Date(),
@@ -4279,10 +4279,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'La medida que ayudaría a mejorar la situación actual de Chile es el cobro de contribuciones de las propiedades más caras de Chile, el cobro de impuesto a empresas, la disminución de la dieta parlamentaria. Regular las AFP, para que sea un sistema justo para cada ciudadano, que estas instituciones no jueguen con los fondos invirtiendolos en el extranjero ya que la caída del fondo significa la pérdida casi total de la pensión y el trabajo acumulado del adulto mayor que trabajó más de cuarenta años se pierde por completo. Otro tema significativo es la educación, este es un derecho no un privilegio, por lo que se deben enseñar todas las asignaturas incluyendo Historia y Filosofía. ',
       rating: 0,
       createdAt: new Date(),
@@ -4291,10 +4291,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'La medida que ayudaría a mejorar la situación actual de Chile es el cobro de contribuciones de las propiedades más caras de Chile, el cobro de impuesto a empresas, la disminución de la dieta parlamentaria. Regular las AFP, para que sea un sistema justo para cada ciudadano, que estas instituciones no jueguen con los fondos invirtiendolos en el extranjero ya que la caída del fondo significa la pérdida casi total de la pensión y el trabajo acumulado del adulto mayor que trabajó más de cuarenta años se pierde por completo. Otro tema significativo es la educación, este es un derecho no un privilegio, por lo que se deben enseñar todas las asignaturas incluyendo Historia y Filosofía. ',
       rating: 0,
       createdAt: new Date(),
@@ -4303,10 +4303,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'La medida que ayudaría a mejorar la situación actual de Chile es el cobro de contribuciones de las propiedades más caras de Chile, el cobro de impuesto a empresas, la disminución de la dieta parlamentaria. Regular las AFP, para que sea un sistema justo para cada ciudadano, que estas instituciones no jueguen con los fondos invirtiendolos en el extranjero ya que la caída del fondo significa la pérdida casi total de la pensión y el trabajo acumulado del adulto mayor que trabajó más de cuarenta años se pierde por completo. Otro tema significativo es la educación, este es un derecho no un privilegio, por lo que se deben enseñar todas las asignaturas incluyendo Historia y Filosofía. ',
       rating: 0,
       createdAt: new Date(),
@@ -4315,10 +4315,10 @@ module.exports = {
       
       {
       privacy: true,
-      email: 'nan',
-      instagram: 'nan',
+      email: '',
+      instagram: '',
       status: 'pendiente',
-      type: 'nan',
+      type: '',
       body: 'Llamar a la realización de cabildos comunales para la revisión de un presupuesto nacional base. De esta manera poder generar diálogo y discusión de manera transversal con la autoridad política sobre que elementos del presupuesto debiesen priorizarse en los próximos años, dadas las demandas sociales existentes. La importancia de esto recae en el hecho de que los recursos en un país como Chile son limitados y no alcanza para hacer todo, por lo que discutir sobre que temas son más prioritarios a nivel país sería una buena medida para empezar.',
       rating: 0,
       createdAt: new Date(),
