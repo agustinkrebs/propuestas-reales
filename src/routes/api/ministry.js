@@ -3,17 +3,17 @@ const KoaRouter = require('koa-router');
 const router = new KoaRouter();
 
 router.get('api.ministry.list', '/', async (ctx) => {
-  const ministryList = await ctx.orm.ministry.findAll();
-  ctx.body = ctx.jsonSerializer('ministry', {
-    attributes: ['ministry'],
-    }).serialize(ministryList);
+  const associationList = await ctx.orm.post_ministries.findAll();
+  ctx.body = ctx.jsonSerializer('post_ministries', {
+    attributes: ['ministryId', 'postId'],
+    }).serialize(associationList);
 });
 
 router.get('api.ministry.show', '/:id', async (ctx) => {
-  const ministry = await await ctx.orm.ministry.findByPk(ctx.params.id);
-  ctx.body = ctx.jsonSerializer('ministry', {
-    attributes: ['ministry'],
-  }).serialize(ministry);
+  const associationList = await ctx.orm.post_ministries.findAll({ where: { postId: ctx.params.id },});
+  ctx.body = ctx.jsonSerializer('post_ministries', {
+    attributes: ['ministryId', 'postId'],
+  }).serialize(associationList);
 });
 
 module.exports = router;
