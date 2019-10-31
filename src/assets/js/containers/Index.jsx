@@ -4,9 +4,12 @@ import PostListComponent from '../components/Index';
 
 function postObject(posts) {
   const rPosts = posts.reverse();
-  console.log(rPosts[0]);
   const objectList = rPosts.map((p) => JSON.parse(p));
-  console.log(rPosts[0]);
+  console.log("RECIBIENDO POSTS");
+  objectList.forEach(p => {
+    p.body = p.body.replace(/&quote&/g, "'");
+    console.log(p.body);
+  });
   return objectList;
 }
 

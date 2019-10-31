@@ -30,7 +30,6 @@ export default class Form extends Component {
 
   async onSubmit(event) {
     const data = new FormData();
-    console.log(description)
     if (this.state.description){
     data.append('', this.state.photo);
     data.append('privacy', this.state.privacy);
@@ -58,8 +57,7 @@ export default class Form extends Component {
     data.append('min22', this.state.min22);
     data.append('min23', this.state.min23);
     data.append('min24', this.state.min24);
-
-    data.append('body', this.state.description);
+    data.append('body', this.state.description.replace(/'/g, "&quote&").replace(/"/g, "&quote&"));
     data.append('email', this.state.mail);
     data.append('instagram', this.state.instagram);
     data.append('type', this.state.type);
