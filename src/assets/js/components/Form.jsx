@@ -57,7 +57,7 @@ export default class Form extends Component {
     data.append('min22', this.state.min22);
     data.append('min23', this.state.min23);
     data.append('min24', this.state.min24);
-    data.append('body', this.state.description.replace(/'/g, "&quote&").replace(/"/g, "&quote&"));
+    data.append('body', this.state.description.replace(/'/g, "&quote&").replace(/"/g, "&quote&").replace(/\n/g, "&line&"));
     data.append('email', this.state.mail);
     data.append('instagram', this.state.instagram);
     data.append('type', this.state.type);

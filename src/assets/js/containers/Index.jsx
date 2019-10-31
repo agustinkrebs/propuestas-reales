@@ -7,7 +7,7 @@ function postObject(posts) {
   const objectList = rPosts.map((p) => JSON.parse(p));
   console.log("RECIBIENDO POSTS");
   objectList.forEach(p => {
-    p.body = p.body.replace(/&quote&/g, "'");
+    p.body = p.body.replace(/&quote&/g, "'").replace(/&line&/g, " ");
     console.log(p.body);
   });
   return objectList;
