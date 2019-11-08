@@ -31,6 +31,17 @@ router.get('posts.list', '/', async (ctx) => {
   });
 });
 
+router.get('posts.vote', '/vote', async (ctx) => {
+  const originalPosts = await ctx.orm.post.findAll({ where: { status: 'aprobado' },});
+  const posts = await postsWithMinistries(originalPosts);
+  const ministries = await ctx.orm.ministry.findAll();
+  await ctx.render('posts/vote', {
+    posts,
+    ministries,
+    newPostPath: ctx.router.url('posts.new'),
+  });
+});
+
 router.get('posts.approval', '/approval', async (ctx) => {
   const posts = await ctx.orm.post.findAll();
   await ctx.render('posts/approval', {
