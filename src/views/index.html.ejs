@@ -22,3 +22,38 @@
 	<p>2. <strong>Explora las ideas existentes:</strong> Te invitamos a leer qué ideas han propuesto otras personas en las temáticas que te interesan.</p>
 	<p>3. <strong>Coopera:</strong> Ponte en contacto con las personas detrás de las ideas que te parezcan interesantes. Creemos firmemente en que la colaboración e iteración de ideas es esencial para llegar a mejores propuestas (próximamente).</p>
 </section>
+
+<section class="mid-container">
+	<h3 class="header" id="second-header">¿Quieres descargar las ideas?</h3>
+	<p><strong>Haz click aquí!</strong> </p>
+	<button id="download_button">Download</button>
+	
+</section>
+
+
+
+<script type="text/javascript">
+
+	var csv = <%- `'${JSON.stringify(csv)}'` %>;
+
+	var download = function() {
+	var button = document.getElementById('download_button');
+	button.onclick = function(){
+	console.log(csv);
+    const blob = new Blob([csv], {type: 'text/csv'});
+    const url = window.URL.createObjectURL(blob);
+	const a = document.createElement('a');
+	console.log(csv);
+    a.setAttribute('hidden', '');
+    a.setAttribute('href', url); 
+    a.setAttribute('download', 'download.csv');
+	document.body.appendChild(a);
+	a.click()
+	document.body.removeChild(a);
+	
+    }}
+	document.addEventListener('DOMContentLoaded', download());
+
+</script>  
+
+

@@ -7,6 +7,7 @@ import PostList from './containers/Index';
 const reactForm = document.getElementById('react-form');
 const reactIndex = document.getElementById('react-index');
 
+  
 
 if (reactForm) {
   ReactDOM.render(<Form />, reactForm);
