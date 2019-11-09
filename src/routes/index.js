@@ -5,8 +5,18 @@ const router = new KoaRouter();
 
 router.get('/', async (ctx) => {
   const postsList = await ctx.orm.post.findAll();
+  const associationList = await ctx.orm.post_ministries.findAll();
   var jsonList = []
   postsList.forEach(post => {
+    ministries = []
+      associationList.forEach(element => {
+        console.log(element.postId, post.id);
+        if (element.postId == post.id)
+        {
+          console.log('hola');
+          ministries.push(element.ministryId)
+        }
+      });
     var data = {}
     data["id"] = post.id;
     data['privacy'] = post.privacy;
@@ -16,6 +26,7 @@ router.get('/', async (ctx) => {
     data['rating'] = post.rating;
     data['type'] = post.type;
     data['status'] = post.status;
+    data['ministries'] = ministries;
     jsonList.push(data)
   })
 
