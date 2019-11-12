@@ -39,7 +39,6 @@
 	var download = function() {
 	var button = document.getElementById('download_button');
 	button.onclick = function(){
-	console.log(csv);
     const blob = new Blob([csv], {type: 'text/csv'});
     const url = window.URL.createObjectURL(blob);
 	const a = document.createElement('a');

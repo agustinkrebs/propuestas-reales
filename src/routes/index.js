@@ -8,7 +8,7 @@ router.get('/', async (ctx) => {
   const associationList = await ctx.orm.post_ministries.findAll();
   var jsonList = []
   postsList.forEach(post => {
-    ministries = []
+    var ministries = []
       associationList.forEach(element => {
         console.log(element.postId, post.id);
         if (element.postId == post.id)
@@ -26,7 +26,9 @@ router.get('/', async (ctx) => {
     data['rating'] = post.rating;
     data['type'] = post.type;
     data['status'] = post.status;
-    data['ministries'] = ministries;
+    // Como ministries está separado por comas, lo casteamos a string y cambiamos por punto y coma 
+    var ministries_string =  ministries.toString();
+    data['ministries'] = ministries_string.replace(',', ';');
     jsonList.push(data)
   })
 
