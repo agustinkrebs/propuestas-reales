@@ -10,10 +10,6 @@ function postObject(posts) {
   return objectList;
 }
 
-function ministryObject(ministries) {
-  const objectList = ministries.map((m) => JSON.parse(m));
-  return objectList;
-}
 
 async function getIp() {
   const ip = fetch('http://www.geoplugin.net/json.gp')
@@ -30,10 +26,8 @@ export default class Vote extends Component {
   constructor(props) {
     super(props);
     const posts = postObject(postList);
-    const ministries = ministryObject(ministriesList);
 
     this.state = {
-      ministries,
       posts,
       nonVoted: posts,
       currentPost: posts[0],
@@ -47,8 +41,8 @@ export default class Vote extends Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
-  componentDidMount() {
-    const ip = getIp();
+  async componentDidMount() {
+    const ip = await getIp();
     this.setState({ userIp: ip });
   }
 
@@ -68,17 +62,15 @@ export default class Vote extends Component {
   }
 
   async onSubmit(event) {
-    console.log(this.state.userIp);
     const data = new FormData();
     data.append('affinity', this.state.affinity);
     data.append('urgency', this.state.urgency);
     data.append('postId', this.state.currentPost.id);
     data.append('userIp', this.state.userIp);
-    // Aca hacemos el voto en el backend
-    // fetch('/votes', {
-    //   method: 'POST',
-    //   body: data,
-    // });
+    fetch('/votes', {
+      method: 'POST',
+      body: data,
+    });
     this.updateNonVoted();
     event.preventDefault();
   }
