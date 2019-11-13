@@ -1,0 +1,26 @@
+$md-slider-include-discrete: true !default;
+/* Desktop Styles */
+//@media only screen and (min-width: 961px) {
+    .emoji{
+        width: 50px;
+        opacity: 0.5;
+    }
+    .emoji:hover{
+        width: 50px;
+        opacity: 1;
+    }
+
+    .emoji-elegida{
+        width: 50px;
+        opacity: 1;
+    }
+
+    .votos{
+        align-self: center;
+        width: 80%;
+      }
+    .slider-bar{
+        align-self: center;
+        width: 40%;
+    }
+//}

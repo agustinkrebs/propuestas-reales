@@ -1,5 +1,8 @@
 @import './layout';
 @import './hello';
+@import './votes';
+@import '~react-md/src/scss/react-md';
+@include react-md-everything;
 
 
 /* Desktop Styles */
