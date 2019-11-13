@@ -28,7 +28,7 @@ router.get('/', async (ctx) => {
     data['status'] = post.status;
     // Como ministries está separado por comas, lo casteamos a string y cambiamos por punto y coma 
     var ministries_string =  ministries.toString();
-    data['ministries'] = ministries_string.replace(',', ';');
+    data['ministries'] = ministries_string.replace(/,/g, ';');
     jsonList.push(data)
   })
 
