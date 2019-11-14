@@ -1,3 +1,39 @@
 {
-  "extends": "airbnb-base",
+  "parser": "babel-eslint",
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+  },
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "prettier",
+    "react"
+  ],
+  "rules": {
+		"prettier/prettier": ["error", {
+      "trailingComma": "es5",
+      "semi": false,
+      "singleQuote": true
+    }],
+		"prefer-const": ["error", {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false
+    }],
+    "require-atomic-updates": "off"
+		// "no-var": "error",
+    // "eqeqeq": ["error", "smart"],
+    // "no-console": 1,
+    // "react/display-name": 1,
+    // "react/prop-types": 1
+	}
 }
