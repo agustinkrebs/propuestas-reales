@@ -24,6 +24,11 @@ const useStyles = makeStyles(() => ({
     color: 'black',
     padding: '0 24px 8px 24px',
   },
+  ministry: {
+    display: 'inline-block',
+    margin: '2px',
+    borderRadius: '2px',
+  },
 }))
 
 function ExpandPost(props) {
@@ -38,7 +43,7 @@ function ExpandPost(props) {
         id="panel1a-header"
         className={classes.panelSummary}
       >
-        <Grid container direction="column">
+        <Grid container>
           <Grid item className={classes.panelSummaryType}>
             <Typography>{props.post.type}</Typography>
           </Grid>
@@ -55,7 +60,27 @@ function ExpandPost(props) {
         </Grid>
       </ExpansionPanelSummary>
       <ExpansionPanelDetails>
-        <Typography>{props.detail}</Typography>
+        <Grid container>
+          <Grid item>
+            <Typography>Área(s): </Typography>
+            {props.post.ministries.map((ministry, i) => (
+              <Typography
+                key={i}
+                className={
+                  classes.ministry +
+                  ' ' +
+                  'area-' +
+                  ministry.ministry.replace(/ /g, '-').replace(/,/g, '')
+                }
+              >
+                {ministry.ministry}
+              </Typography>
+            ))}
+          </Grid>
+          <Grid item>
+            <Typography>{props.detail}</Typography>
+          </Grid>
+        </Grid>
       </ExpansionPanelDetails>
     </ExpansionPanel>
   )

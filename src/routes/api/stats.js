@@ -7,6 +7,7 @@ router.get('api.stats.top_posts', '/', async ctx => {
     order: [['rating', 'DESC']],
     limit: 10,
     attributes: ['type', 'body', 'rating'],
+    include: [ctx.orm.ministry],
   })
   ctx.body = postsList
 })

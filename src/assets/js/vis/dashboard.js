@@ -43,7 +43,7 @@ export function drawTypeChart(types) {
   const maxValue = types[0].value
 
   const margin = { top: 20, right: 20, bottom: 20, left: 120 }
-  const width = 370 - margin.left - margin.right
+  const width = window.innerWidth / 2 - margin.left - margin.right
   const height = 350 - margin.top - margin.bottom
 
   const svg = d3
@@ -101,7 +101,7 @@ export function drawMinistryChart(ministries) {
   const maxValue = data[0].value
 
   const margin = { top: 20, right: 20, bottom: 20, left: 120 }
-  const width = 370 - margin.left - margin.right
+  const width = window.innerWidth / 2 - margin.left - margin.right
   const height = 750 - margin.top - margin.bottom
 
   const svg = d3
