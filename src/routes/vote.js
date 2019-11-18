@@ -15,10 +15,35 @@ async function postsWithMinistries(posts) {
   return newPosts;
 }
 
+async function countVotes(ctx) {
+  const votes = await ctx.orm.vote.findAll();
+  const countedVotes = {};
+  votes.forEach((vote) => {
+    countedVotes[vote.postId] = (countedVotes[vote.postId] || 0) + 1;
+  });
+  return countedVotes;
+}
+
+async function postsWithVotes(posts, countedVotes) {
+  const newPosts = [];
+  for (let i = 0; i < posts.length; i++) {
+    const p = posts[i];
+    const votes = (countedVotes[p.id] || 0);
+    const newPost = { votes };
+    const copy = Object.assign(newPost, p);
+    newPosts.push(copy);
+  }
+  return newPosts;
+}
+
 router.get('votes.index', '/', async (ctx) => {
   const originalPosts = await ctx.orm.post.findAll({ where: { status: 'aprobado' } });
-  const posts = await postsWithMinistries(originalPosts);
+  let posts = await postsWithMinistries(originalPosts);
+  const countedVotes = await countVotes(ctx);
+  posts = await postsWithVotes(posts, countedVotes);
+  posts.sort((a, b) => a.votes - b.votes);
   const postsJSON = JSON.stringify(posts);
+
   await ctx.render('votes/index', {
     postsJSON,
     newPostPath: ctx.router.url('posts.new'),
