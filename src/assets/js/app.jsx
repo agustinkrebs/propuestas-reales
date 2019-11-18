@@ -18,5 +18,5 @@ if (reactIndex) {
 }
 
 if (reactVote) {
-  ReactDOM.render(<Vote />, reactVote);
+  ReactDOM.render(<Vote serverData={reactVote.dataset} />, reactVote);
 }

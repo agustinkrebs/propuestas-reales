@@ -18,31 +18,24 @@ async function postsWithMinistries(posts) {
 router.get('votes.index', '/', async (ctx) => {
   const originalPosts = await ctx.orm.post.findAll({ where: { status: 'aprobado' } });
   const posts = await postsWithMinistries(originalPosts);
+  const postsJSON = JSON.stringify(posts);
   await ctx.render('votes/index', {
-    posts,
+    postsJSON,
     newPostPath: ctx.router.url('posts.new'),
   });
 });
 
 router.post('votes.create', '/', async (ctx) => {
-  const {
-    postId, userIp, affinity, urgency,
-  } = ctx.request.body;
-  console.log(postId);
-  console.log(userIp);
-  console.log(affinity);
-  console.log(urgency);
   const vote = ctx.orm.vote.build(ctx.request.body);
+
   try {
     await vote.save({ fields: ['postId', 'userIp', 'affinity', 'urgency'] });
-    console.log("GUARDE EL VOTO");
   } catch (validationError) {
     const originalPosts = await ctx.orm.post.findAll({ where: { status: 'aprobado' } });
     const posts = await postsWithMinistries(originalPosts);
-    const ministries = await ctx.orm.ministry.findAll();
+    const postsJSON = JSON.stringify(posts);
     await ctx.render('votes/index', {
-      posts,
-      ministries,
+      postsJSON,
       newPostPath: ctx.router.url('posts.new'),
     });
   }

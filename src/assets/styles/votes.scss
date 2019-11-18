@@ -16,11 +16,23 @@ $md-slider-include-discrete: true !default;
     }
 
     .votos{
-        align-self: center;
-        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
     .slider-bar{
         align-self: center;
         width: 40%;
+    }
+    .votar-button{
+        font-size: 15px;
+        width: 200px;
+        padding: 10px 15px;
+        border-radius: 30px;
+        text-decoration: None;
+        margin: 7px;
+        font-weight: bold;
+        background-color: #333881;
+        color: white;
     }
 //}
