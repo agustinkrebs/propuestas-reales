@@ -6,6 +6,7 @@ const post = require('./routes/post');
 const ministry = require('./routes/ministry');
 const session = require('./routes/session');
 const api = require('./routes/api');
+const vote = require('./routes/vote');
 
 
 const router = new KoaRouter();
@@ -25,7 +26,6 @@ router.use('/posts', post.routes());
 router.use('/ministry', ministry.routes());
 router.use('/session', session.routes());
 router.use('/api', api.routes());
-
-
+router.use('/votes', vote.routes());
 
 module.exports = router;

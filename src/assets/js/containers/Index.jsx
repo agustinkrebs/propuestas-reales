@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
-import IndexService from '../services/Index';
 import PostListComponent from '../components/Index';
 
 function postObject(posts) {
   const rPosts = posts.reverse();
   const objectList = rPosts.map((p) => JSON.parse(p));
-  console.log("RECIBIENDO POSTS");
   objectList.forEach(p => {
     p.body = p.body.replace(/&quote&/g, "'").replace(/&line&/g, " ");
-    console.log(p.body);
   });
   return objectList;
 }
@@ -28,26 +25,27 @@ export default class PostList extends Component {
       ministries,
       posts,
       filteredPosts: posts,
-      type: '-',
-      ministry: '-',
+      typeFilter: '-',
+      ministryFilter: '-',
     };
-    this.typeFilter = this.typeFilter.bind(this);
-    this.ministryFilter = this.ministryFilter.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.filter = this.filter.bind(this);
   }
 
-  componentDidMount() {
+  async handleChange(event) {
+    await this.setState({ [event.target.name]: event.target.value });
+    await this.filter();
   }
 
-  async typeFilter(event) {
-    await this.setState({ type: event.target.value });
-    const filteredPosts = await IndexService.typeFilter(this.state.posts, this.state.type);
-    await this.setState({ filteredPosts });
-  }
-
-  async ministryFilter(event) {
-    await this.setState({ ministry: event.target.value });
-    const filteredPosts = await IndexService.ministryFilter(this.state.posts, this.state.ministry);
-    await this.setState({ filteredPosts });
+  async filter() {
+    let newFilteredPosts = this.state.posts;
+    if (this.state.typeFilter !== '-') {
+      newFilteredPosts = newFilteredPosts.filter((p) => p.type === this.state.typeFilter);
+    }
+    if (this.state.ministryFilter !== '-') {
+      newFilteredPosts = newFilteredPosts.filter((p) => p.ministries.includes(this.state.ministryFilter));
+    }
+    await this.setState({ filteredPosts: newFilteredPosts });
   }
 
   render() {
@@ -56,7 +54,7 @@ export default class PostList extends Component {
       <div className="react-index-container">
         <h3>Filtra las propuestas:</h3>
         <div className="filter-type-container">
-          <select id="content" name="type" onChange={this.typeFilter}>
+          <select id="content" name="typeFilter" onChange={this.handleChange}>
             <option value="-">Todos los tipos:</option>
             <option value="Reforma/cambio a un Proyecto de Ley">Reforma/cambio a un Proyecto de Ley</option>
             <option value="Proyecto ciudadano">Proyecto ciudadano</option>
@@ -64,7 +62,7 @@ export default class PostList extends Component {
           </select>
         </div>
         <div className="ministries-container">
-          <select id="content" name="ministry" onChange={this.ministryFilter}>
+          <select id="content" name="ministryFilter" onChange={this.handleChange}>
             <option value="-">Todas las áreas:</option>
             {ministryOptions}
           </select>

@@ -190,7 +190,7 @@ export default class Form extends Component {
           <h3>¿Quieres que tu propuesta sea anónima?</h3>
           <select id="privacy" name="privacy" value={this.state.value} onChange={this.handleChange}>
             <option value="" disabled selected>Respuesta:</option>
-            <option value="anonymous">Sí</option>
+            <option valuepublicar="anonymous">Sí</option>
             <option value="private">No</option>
           </select>
 

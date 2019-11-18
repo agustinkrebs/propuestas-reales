@@ -1,0 +1,38 @@
+$md-slider-include-discrete: true !default;
+/* Desktop Styles */
+//@media only screen and (min-width: 961px) {
+    .emoji{
+        width: 50px;
+        opacity: 0.5;
+    }
+    .emoji:hover{
+        width: 50px;
+        opacity: 1;
+    }
+
+    .emoji-elegida{
+        width: 50px;
+        opacity: 1;
+    }
+
+    .votos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    .slider-bar{
+        align-self: center;
+        width: 40%;
+    }
+    .votar-button{
+        font-size: 15px;
+        width: 200px;
+        padding: 10px 15px;
+        border-radius: 30px;
+        text-decoration: None;
+        margin: 7px;
+        font-weight: bold;
+        background-color: #333881;
+        color: white;
+    }
+//}
