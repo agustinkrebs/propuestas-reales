@@ -45,7 +45,9 @@ function ExpandPost(props) {
       >
         <Grid container>
           <Grid item className={classes.panelSummaryType}>
-            <Typography>{props.post.type}</Typography>
+            <Typography>
+              ({props.post.rating}) {props.post.type}
+            </Typography>
           </Grid>
           <Grid
             item
