@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import VoteComponent from '../components/Vote';
 import {Slider} from 'react-md';
-import 'react-md/src/scss/_react-md.scss'
+import VoteComponent from '../components/Vote';
+import 'react-md/src/scss/_react-md.scss';
 
-const face1 = "https://static.thenounproject.com/png/2546407-200.png";
-const face2 = "https://static.thenounproject.com/png/2546575-200.png";
-const face3 = "https://static.thenounproject.com/png/2546469-200.png";
-const face4 = "https://static.thenounproject.com/png/2546486-200.png";
-const face5 = "https://static.thenounproject.com/png/2561904-200.png";
+const face1 = 'https://static.thenounproject.com/png/2546407-200.png';
+const face2 = 'https://static.thenounproject.com/png/2546575-200.png';
+const face3 = 'https://static.thenounproject.com/png/2546469-200.png';
+const face4 = 'https://static.thenounproject.com/png/2546486-200.png';
+const face5 = 'https://static.thenounproject.com/png/2561904-200.png';
 
 function postObject(posts) {
-  const objectList =  JSON.parse(posts);
+  const objectList = JSON.parse(posts);
   objectList.forEach((p) => {
     p.body = p.body.replace(/&quote&/g, "'").replace(/&line&/g, ' ');
   });
@@ -21,21 +21,22 @@ export default class Vote extends Component {
   constructor(props) {
     super(props);
     const posts = postObject(props.serverData.posts);
-    let styles = ['emoji', 'emoji', 'emoji', 'emoji', 'emoji'];
+    const styles = ['emoji', 'emoji', 'emoji', 'emoji', 'emoji'];
 
     this.state = {
       posts,
       nonVoted: posts,
       currentPost: posts[0],
-      urgency: -1,
-      affinity: -1,
+      urgency: null,
+      affinity: null,
       noMorePosts: false,
       userIp: null,
-      styles: styles,
+      styles,
     };
     this.handleChange = this.handleChange.bind(this);
     this.updateNonVoted = this.updateNonVoted.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
+    this.pasar = this.pasar.bind(this);
     this.affinity1 = this.affinity1.bind(this);
     this.affinity2 = this.affinity2.bind(this);
     this.affinity3 = this.affinity3.bind(this);
@@ -55,28 +56,28 @@ export default class Vote extends Component {
   }
 
   async affinity1() {
-    this.setState({styles: ['emoji-elegida', 'emoji', 'emoji', 'emoji', 'emoji']});
-    this.setState({affinity: 1});
+    this.setState({ styles: ['emoji-elegida', 'emoji', 'emoji', 'emoji', 'emoji'] });
+    this.setState({ affinity: 1 });
   }
 
   async affinity2() {
-    this.setState({styles: ['emoji', 'emoji-elegida', 'emoji', 'emoji', 'emoji']});
-    this.setState({affinity: 2});
+    this.setState({ styles: ['emoji', 'emoji-elegida', 'emoji', 'emoji', 'emoji'] });
+    this.setState({ affinity: 2 });
   }
 
   async affinity3() {
-    this.setState({styles: ['emoji', 'emoji', 'emoji-elegida', 'emoji', 'emoji']});
-    this.setState({affinity: 3});
+    this.setState({ styles: ['emoji', 'emoji', 'emoji-elegida', 'emoji', 'emoji'] });
+    this.setState({ affinity: 3 });
   }
 
   async affinity4() {
-    this.setState({styles: ['emoji', 'emoji', 'emoji', 'emoji-elegida', 'emoji']});
-    this.setState({affinity: 4});
+    this.setState({ styles: ['emoji', 'emoji', 'emoji', 'emoji-elegida', 'emoji'] });
+    this.setState({ affinity: 4 });
   }
 
   async affinity5() {
-    this.setState({styles: ['emoji', 'emoji', 'emoji', 'emoji', 'emoji-elegida']});
-    this.setState({affinity: 5});
+    this.setState({ styles: ['emoji', 'emoji', 'emoji', 'emoji', 'emoji-elegida'] });
+    this.setState({ affinity: 5 });
   }
 
 
@@ -84,6 +85,10 @@ export default class Vote extends Component {
     this.setState({ urgency });
   }
 
+  async pasar() {
+    await this.setState({ urgency: null, affinity: null });
+    // await this.onSubmit(event);
+  }
 
   async updateNonVoted() {
     const { nonVoted } = this.state;
@@ -125,11 +130,11 @@ export default class Vote extends Component {
         <div className="votos">
           <h1>¿Qué te parece?</h1>
           <div className="faces">
-            <img className={this.state.styles[0]} src={face1} onClick={this.affinity1}/>
-            <img className={this.state.styles[1]} src={face2} onClick={this.affinity2}/>
-            <img className={this.state.styles[2]} src={face3} onClick={this.affinity3}/>
-            <img className={this.state.styles[3]} src={face4} onClick={this.affinity4}/>
-            <img className={this.state.styles[4]} src={face5} onClick={this.affinity5}/>
+            <img className={this.state.styles[0]} src={face1} onClick={this.affinity1} />
+            <img className={this.state.styles[1]} src={face2} onClick={this.affinity2} />
+            <img className={this.state.styles[2]} src={face3} onClick={this.affinity3} />
+            <img className={this.state.styles[3]} src={face4} onClick={this.affinity4} />
+            <img className={this.state.styles[4]} src={face5} onClick={this.affinity5} />
           </div>
           <h1>¿Qué tan urgente crees que es?</h1>
           <div className="slider-bar">
@@ -142,15 +147,18 @@ export default class Vote extends Component {
               step={1}
               discreteTicks={1}
               valuePrecision={1}
-              />
+            />
           </div>
           <form onSubmit={this.onSubmit} encType="multipart/form-data">
             <button type="submit" className="votar-button">
                 Calificar
             </button>
+            <button type="submit" onClick={this.pasar} className="pasar-button">
+                Pasar
+            </button>
           </form>
         </div>
       </div>
-    )
+    );
   }
 }

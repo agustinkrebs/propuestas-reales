@@ -52,17 +52,24 @@ router.get('votes.index', '/', async (ctx) => {
 
 router.post('votes.create', '/', async (ctx) => {
   const vote = ctx.orm.vote.build(ctx.request.body);
-
+  console.log(vote.affinity);
+  if (vote.affinity === 'null') {
+    vote.affinity = null;
+  }
+  if (vote.urgency === 'null') {
+    vote.urgency = null;
+  }
   try {
     await vote.save({ fields: ['postId', 'userIp', 'affinity', 'urgency'] });
   } catch (validationError) {
-    const originalPosts = await ctx.orm.post.findAll({ where: { status: 'aprobado' } });
-    const posts = await postsWithMinistries(originalPosts);
-    const postsJSON = JSON.stringify(posts);
-    await ctx.render('votes/index', {
-      postsJSON,
-      newPostPath: ctx.router.url('posts.new'),
-    });
+    console.log(validationError);
+    // const originalPosts = await ctx.orm.post.findAll({ where: { status: 'aprobado' } });
+    // const posts = await postsWithMinistries(originalPosts);
+    // const postsJSON = JSON.stringify(posts);
+    // await ctx.render('votes/index', {
+    //   postsJSON,
+    //   newPostPath: ctx.router.url('posts.new'),
+    // });
   }
 });
 module.exports = router;
