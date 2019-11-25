@@ -20,7 +20,8 @@ if (reactIndex) {
 
 if (reactVote) {
   ReactDOM.render(<Vote serverData={reactVote.dataset} />, reactVote)
-  if (reactDashboard) {
-    ReactDOM.render(<Dashboard />, reactDashboard)
-  }
+}
+
+if (reactDashboard) {
+  ReactDOM.render(<Dashboard />, reactDashboard)
 }

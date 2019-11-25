@@ -45,7 +45,7 @@ function ExpandPost(props) {
       >
         <Grid container>
           <Grid item className={classes.panelSummaryType}>
-            <Typography>
+            <Typography style={{ color: 'white' }}>
               ({props.post.rating}) {props.post.type}
             </Typography>
           </Grid>
